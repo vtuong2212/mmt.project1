@@ -1,4 +1,3 @@
-// packet.h
 #ifndef PACKET_H
 #define PACKET_H
 
@@ -7,18 +6,36 @@
 class Packet
 {
 public:
-    Packet();
+    // Constructor mặc định
+    Packet() = default;
 
-    Packet(const QString& cmd,
-           const QString& msg);
+    // Constructor có tham số
+    Packet(const QString& cmd, const QString& msg)
+        : command(cmd), data(msg)
+    {
+    }
 
     // Getter
-    QString getCommand() const;
-    QString getData() const;
+    QString getCommand() const
+    {
+        return command;
+    }
+
+    QString getData() const
+    {
+        return data;
+    }
 
     // Setter
-    void setCommand(const QString& cmd);
-    void setData(const QString& msg);
+    void setCommand(const QString& cmd)
+    {
+        command = cmd;
+    }
+
+    void setData(const QString& msg)
+    {
+        data = msg;
+    }
 
 private:
     QString command;
