@@ -1,46 +1,88 @@
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#include "MainWindow.h"
+#include "ui_MainWindow.h"
 
-#include <QMainWindow>
+#include <QPushButton>
+#include <QDebug>
 
-#include "../Pages/ApplicationPage.h"
-#include "../Pages/ProcessPage.h"
-#include "../Pages/ScreenshotPage.h"
-#include "../Pages/KeyloggerPage.h"
-#include "../Pages/FilePage.h"
-#include "../Pages/WebcamPage.h"
-#include "../Pages/PowerPage.h"
 
-QT_BEGIN_NAMESPACE
-namespace Ui {
-class MainWindow;
-}
-QT_END_NAMESPACE
-
-class MainWindow : public QMainWindow
+MainWindow::MainWindow(QWidget *parent)
+    : QMainWindow(parent)
+    , ui(new Ui::MainWindow)
 {
-    Q_OBJECT
+    ui->setupUi(this);
 
-public:
-    MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
 
-private slots:
+    //-----------------------------------
+    // Create Pages
+    //-----------------------------------
 
-    void onConnectClicked();
-    void onDisconnectClicked();
+    applicationPage = new ApplicationPage(this);
+    processPage = new ProcessPage(this);
+    screenshotPage = new ScreenshotPage(this);
+    keyloggerPage = new KeyloggerPage(this);
+    filePage = new FilePage(this);
+    webcamPage = new WebcamPage(this);
+    powerPage = new PowerPage(this);
 
-private:
 
-    Ui::MainWindow *ui;
+    //-----------------------------------
+    // Add Pages to TabWidget
+    //-----------------------------------
 
-    ApplicationPage *applicationPage;
-    ProcessPage *processPage;
-    ScreenshotPage *screenshotPage;
-    KeyloggerPage *keyloggerPage;
-    FilePage *filePage;
-    WebcamPage *webcamPage;
-    PowerPage *powerPage;
-};
+    ui->tabWidget->addTab(applicationPage,
+                          "Application");
 
-#endif // MAINWINDOW_H
+    ui->tabWidget->addTab(processPage,
+                          "Processes");
+
+    ui->tabWidget->addTab(screenshotPage,
+                          "Screenshot");
+
+    ui->tabWidget->addTab(keyloggerPage,
+                          "Keylogger");
+
+    ui->tabWidget->addTab(filePage,
+                          "File Download");
+
+    ui->tabWidget->addTab(webcamPage,
+                          "Webcam");
+
+    ui->tabWidget->addTab(powerPage,
+                          "Power Control");
+
+
+    //-----------------------------------
+    // Connect Button Signals
+    //-----------------------------------
+
+    connect(ui->btnConnect,
+            &QPushButton::clicked,
+            this,
+            &MainWindow::onConnectClicked);
+
+
+
+    connect(ui->btnDisconnect,
+            &QPushButton::clicked,
+            this,
+            &MainWindow::onDisconnectClicked);
+
+}
+
+
+MainWindow::~MainWindow()
+{
+    delete ui;
+}
+
+
+void MainWindow::onConnectClicked()
+{
+    qDebug() << "Connect button clicked!";
+}
+
+
+void MainWindow::onDisconnectClicked()
+{
+    qDebug() << "Disconnect button clicked!";
+}
