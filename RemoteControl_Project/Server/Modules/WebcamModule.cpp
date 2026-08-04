@@ -3,6 +3,9 @@
 #include <QDebug>
 #include <QBuffer>
 #include <QImage>
+#include <QProcess>
+#include <QDir>
+#include <QFile>
 
 #ifdef Q_OS_WIN
 #include <Windows.h>

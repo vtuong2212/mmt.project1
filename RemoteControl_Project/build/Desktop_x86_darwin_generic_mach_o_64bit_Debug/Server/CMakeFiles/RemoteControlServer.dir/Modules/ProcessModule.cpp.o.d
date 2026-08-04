@@ -1,7 +1,6 @@
-Server/CMakeFiles/RemoteControlServer.dir/RemoteControlServer_autogen/mocs_compilation.cpp.o: \
-  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/mocs_compilation.cpp \
-  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/A7AZSKOVAF/moc_CommandManager.cpp \
-  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/A7AZSKOVAF/../../../../../Server/Command/CommandManager.h \
+Server/CMakeFiles/RemoteControlServer.dir/Modules/ProcessModule.cpp.o: \
+  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Server/Modules/ProcessModule.cpp \
+  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Server/Modules/ProcessModule.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/QObject \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qobject.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qobjectdefs.h \
@@ -936,64 +935,14 @@ Server/CMakeFiles/RemoteControlServer.dir/RemoteControlServer_autogen/mocs_compi
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/__chrono/file_clock.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/forward_list \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/QString \
-  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/A7AZSKOVAF/../../../../../Server/Command/../../Common/Packet.h \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/QByteArray \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/QDataStream \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/QIODevice \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/QProcess \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qprocess.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qiodevice.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qspan.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/cassert \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/q20iterator.h \
-  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/A7AZSKOVAF/../../../../../Server/Command/../../Common/Protocol.h \
-  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/A7AZSKOVAF/../../../../../Server/Command/../Modules/ApplicationModule.h \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/QStringList \
-  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/A7AZSKOVAF/../../../../../Server/Command/../Modules/ProcessModule.h \
-  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/A7AZSKOVAF/../../../../../Server/Command/../Modules/ScreenshotModule.h \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/QTimer \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qtimer.h \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qbasictimer.h \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qabstracteventdispatcher.h \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qeventloop.h \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qdeadlinetimer.h \
-  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/A7AZSKOVAF/../../../../../Server/Command/../Modules/../../Common/Constants.h \
-  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/A7AZSKOVAF/../../../../../Server/Command/../Modules/KeyloggerModule.h \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/QMutex \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qmutex.h \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qtsan_impl.h \
-  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/sanitizer/tsan_interface.h \
-  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/A7AZSKOVAF/../../../../../Server/Command/../Modules/FileModule.h \
-  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/A7AZSKOVAF/../../../../../Server/Command/../Modules/WebcamModule.h \
-  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/A7AZSKOVAF/../../../../../Server/Command/../Modules/PowerModule.h \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qtmochelpers.h \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qtmocconstants.h \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/q20algorithm.h \
-  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/GU6V5LI5BE/moc_ApplicationModule.cpp \
-  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/GU6V5LI5BE/../../../../../Server/Modules/ApplicationModule.h \
-  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/GU6V5LI5BE/moc_FileModule.cpp \
-  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/GU6V5LI5BE/../../../../../Server/Modules/FileModule.h \
-  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/GU6V5LI5BE/moc_KeyloggerModule.cpp \
-  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/GU6V5LI5BE/../../../../../Server/Modules/KeyloggerModule.h \
-  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/GU6V5LI5BE/moc_PowerModule.cpp \
-  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/GU6V5LI5BE/../../../../../Server/Modules/PowerModule.h \
-  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/GU6V5LI5BE/moc_ProcessModule.cpp \
-  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/GU6V5LI5BE/../../../../../Server/Modules/ProcessModule.h \
-  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/GU6V5LI5BE/moc_ScreenshotModule.cpp \
-  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/GU6V5LI5BE/../../../../../Server/Modules/ScreenshotModule.h \
-  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/GU6V5LI5BE/moc_WebcamModule.cpp \
-  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/GU6V5LI5BE/../../../../../Server/Modules/WebcamModule.h \
-  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/XUVW4URUT3/moc_ServerSocket.cpp \
-  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/XUVW4URUT3/../../../../../Server/Network/ServerSocket.h \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Headers/QTcpServer \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Headers/qtcpserver.h \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Headers/qtnetworkglobal.h \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Headers/qtnetwork-config.h \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Headers/qtnetworkexports.h \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Headers/qabstractsocket.h \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Headers/qhostaddress.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qshareddata.h \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Headers/QTcpSocket \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Headers/qtcpsocket.h \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qvariant.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/QDebug \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qdebug.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qtextstream.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qcontiguouscache.h \
@@ -1006,9 +955,4 @@ Server/CMakeFiles/RemoteControlServer.dir/RemoteControlServer_autogen/mocs_compi
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qset.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qhash.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qvarlengtharray.h \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qalloc.h \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/q23utility.h \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/q20utility.h \
-  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/XUVW4URUT3/../../../../../Server/Network/../../Common/Packet.h \
-  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/XUVW4URUT3/../../../../../Server/Network/../../Common/Constants.h \
-  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/XUVW4URUT3/../../../../../Server/Network/../../Common/Protocol.h
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qalloc.h

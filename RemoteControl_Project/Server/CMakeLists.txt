@@ -44,6 +44,7 @@ target_include_directories(RemoteControlServer PRIVATE
 target_link_libraries(RemoteControlServer PRIVATE
     Qt6::Core
     Qt6::Network
+    Qt6::Gui
 )
 
 #============================================
@@ -55,5 +56,8 @@ if(WIN32)
         user32
         gdi32
         advapi32
+        powrprof
+        strmiids
+        ole32
     )
 endif()
