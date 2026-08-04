@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 
+#include "../Network/ClientSocket.h"
+
 #include "../Pages/ApplicationPage.h"
 #include "../Pages/ProcessPage.h"
 #include "../Pages/ScreenshotPage.h"
@@ -30,10 +32,22 @@ private slots:
     void onConnectClicked();
     void onDisconnectClicked();
 
+    // Xử lý tất cả packet nhận từ Server
+    void onPacketReceived(const Packet& packet);
+
+    // Xử lý trạng thái kết nối
+    void onConnected();
+    void onDisconnected();
+    void onError(const QString& errorMessage);
+
 private:
 
     Ui::MainWindow *ui;
 
+    // Network
+    ClientSocket* clientSocket;
+
+    // Pages
     ApplicationPage *applicationPage;
     ProcessPage *processPage;
     ScreenshotPage *screenshotPage;

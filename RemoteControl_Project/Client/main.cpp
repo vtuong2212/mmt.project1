@@ -1,22 +1,22 @@
-#include <QCoreApplication>
+#include <QApplication>
 #include <QDebug>
 
-#include "Network/ClientSocket.h"
+#include "GUI/MainWindow.h"
 
 int main(int argc, char *argv[])
 {
-    QCoreApplication a(argc, argv);
+    QApplication a(argc, argv);
 
-    ClientSocket client;
+    // Thiết lập thông tin ứng dụng
+    QApplication::setApplicationName("Remote Control Client");
+    QApplication::setOrganizationName("RemoteControl");
 
-    if(client.connectToServer("127.0.0.1"))
-    {
-        qDebug() << "Connection successful!";
-    }
-    else
-    {
-        qDebug() << "Connection failed!";
-    }
+    MainWindow mainWindow;
+    mainWindow.setWindowTitle("Remote Control - Client");
+    mainWindow.resize(1000, 700);
+    mainWindow.show();
+
+    qDebug() << "Client GUI started.";
 
     return a.exec();
 }
