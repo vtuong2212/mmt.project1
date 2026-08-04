@@ -4,6 +4,7 @@
 #include <QString>
 #include <QByteArray>
 #include <QDataStream>
+#include <QIODevice>
 
 class Packet
 {
