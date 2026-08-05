@@ -772,7 +772,9 @@
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/q20iterator.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/q20memory.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/q20type_traits.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/q20utility.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/q23type_traits.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/q23utility.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qabstracteventdispatcher.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qalgorithms.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qanystringview.h \
@@ -790,6 +792,7 @@
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qbytearraylist.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qbytearrayview.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qchar.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qcheckedint_impl.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qcompare.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qcompare_impl.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qcomparehelpers.h \
@@ -818,9 +821,11 @@
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qiterable.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qiterator.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qlatin1stringview.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qline.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qlist.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qlogging.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qmalloc.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qmargins.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qmath.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qmetacontainer.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qmetatype.h \
@@ -834,10 +839,14 @@
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qobjectdefs_impl.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qoverload.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qpair.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qpoint.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qprocessordetection.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qrect.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qrefcount.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qscopedpointer.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qscopeguard.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qshareddata.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qsize.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qspan.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qstdlibdetection.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qstring.h \
@@ -879,4 +888,32 @@
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qutf8stringview.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qversiontagging.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qxptype_traits.h \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qyieldcpu.h
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qyieldcpu.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/QImage \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qcolor.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qimage.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qpaintdevice.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qpixelformat.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qpolygon.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qregion.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qrgb.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qrgba64.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qtgui-config.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qtguiexports.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qtguiglobal.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qtransform.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qwindowdefs.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/Headers/QCamera \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/Headers/QMediaCaptureSession \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/Headers/QVideoFrame \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/Headers/QVideoSink \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/Headers/qcamera.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/Headers/qcameradevice.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/Headers/qmediacapturesession.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/Headers/qtmultimedia-config.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/Headers/qtmultimediaexports.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/Headers/qtmultimediaglobal.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/Headers/qtvideo.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/Headers/qvideoframe.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/Headers/qvideoframeformat.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/Headers/qvideosink.h

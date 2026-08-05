@@ -1,5 +1,5 @@
 #============================================
-# Remote Control Server (Console Application)
+# Remote Control Server (macOS App Bundle)
 #============================================
 
 # Source files
@@ -34,6 +34,21 @@ add_executable(RemoteControlServer
     ${SERVER_SOURCES}
     ${SERVER_HEADERS}
 )
+
+#============================================
+# macOS: Build thành .app bundle + Info.plist
+# Cần thiết để macOS cấp quyền Camera
+#============================================
+if(APPLE)
+    set_target_properties(RemoteControlServer PROPERTIES
+        MACOSX_BUNDLE TRUE
+        MACOSX_BUNDLE_INFO_PLIST ${CMAKE_CURRENT_SOURCE_DIR}/Info.plist
+        MACOSX_BUNDLE_GUI_IDENTIFIER "com.remotecontrol.server"
+        MACOSX_BUNDLE_BUNDLE_NAME "RemoteControlServer"
+        MACOSX_BUNDLE_BUNDLE_VERSION "1.0"
+        MACOSX_BUNDLE_SHORT_VERSION_STRING "1.0"
+    )
+endif()
 
 # Include thư mục Common
 target_include_directories(RemoteControlServer PRIVATE

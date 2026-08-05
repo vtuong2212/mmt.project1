@@ -6,6 +6,7 @@
 #include <QCameraDevice>
 #include <QCoreApplication>
 #include <QElapsedTimer>
+#include <QPermission>
 
 WebcamModule::WebcamModule(QObject *parent)
     : QObject(parent),
@@ -13,7 +14,9 @@ WebcamModule::WebcamModule(QObject *parent)
       captureSession(nullptr),
       videoSink(nullptr),
       streaming(false),
-      cameraInitialized(false)
+      cameraInitialized(false),
+      permissionGranted(false),
+      pendingStream(false)
 {
     streamTimer = new QTimer(this);
 
@@ -39,7 +42,73 @@ WebcamModule::~WebcamModule()
 
 
 //---------------------------------------------------
-// Khởi tạo camera (gọi 1 lần, lazy init)
+// Xin quyền Camera trên macOS
+// Qt 6.5+ cung cấp QPermission API
+// macOS yêu cầu NSCameraUsageDescription trong Info.plist
+// VÀ phải gọi API xin quyền runtime
+//---------------------------------------------------
+
+void WebcamModule::requestCameraPermission(std::function<void(bool)> callback)
+{
+    // Nếu đã được cấp quyền rồi, gọi callback ngay
+    if (permissionGranted)
+    {
+        callback(true);
+        return;
+    }
+
+#if QT_CONFIG(permissions)
+    QCameraPermission cameraPermission;
+
+    // Kiểm tra trạng thái quyền hiện tại
+    switch (qApp->checkPermission(cameraPermission))
+    {
+    case Qt::PermissionStatus::Granted:
+        qDebug() << "Camera permission: GRANTED";
+        permissionGranted = true;
+        callback(true);
+        break;
+
+    case Qt::PermissionStatus::Undetermined:
+        qDebug() << "Camera permission: UNDETERMINED - requesting...";
+
+        // Xin quyền từ user (hiện dialog hệ thống)
+        qApp->requestPermission(cameraPermission,
+            [this, callback](const QPermission& permission)
+        {
+            if (permission.status() == Qt::PermissionStatus::Granted)
+            {
+                qDebug() << "Camera permission: GRANTED by user";
+                permissionGranted = true;
+                callback(true);
+            }
+            else
+            {
+                qDebug() << "Camera permission: DENIED by user";
+                callback(false);
+            }
+        });
+        break;
+
+    case Qt::PermissionStatus::Denied:
+        qDebug() << "Camera permission: DENIED";
+        qDebug() << "Please go to System Settings > Privacy & Security > Camera"
+                 << "and enable access for RemoteControlServer";
+        callback(false);
+        break;
+    }
+#else
+    // Nếu Qt không hỗ trợ permission API (Qt < 6.5),
+    // giả sử có quyền (Linux/Windows không cần)
+    qDebug() << "Qt permission API not available, assuming granted";
+    permissionGranted = true;
+    callback(true);
+#endif
+}
+
+
+//---------------------------------------------------
+// Khởi tạo camera (gọi sau khi có quyền)
 // Dùng QCamera + QVideoSink từ Qt Multimedia
 //---------------------------------------------------
 
@@ -86,6 +155,13 @@ void WebcamModule::initCamera()
         }
     });
 
+    // Log lỗi camera
+    connect(camera, &QCamera::errorOccurred,
+            this, [](QCamera::Error error, const QString& errorString)
+    {
+        qDebug() << "Camera error:" << error << errorString;
+    });
+
     // Bắt đầu camera
     camera->start();
     cameraInitialized = true;
@@ -101,6 +177,33 @@ void WebcamModule::initCamera()
 
 QString WebcamModule::captureWebcam()
 {
+    // Nếu chưa có quyền, xin quyền đồng bộ
+    if (!permissionGranted)
+    {
+        bool granted = false;
+
+        requestCameraPermission([&granted](bool result)
+        {
+            granted = result;
+        });
+
+        // Đợi permission dialog (processEvents cho đến khi có kết quả)
+        QElapsedTimer permTimer;
+        permTimer.start();
+        while (!permissionGranted && !granted && permTimer.elapsed() < 5000)
+        {
+            QCoreApplication::processEvents(QEventLoop::AllEvents, 100);
+        }
+
+        if (!permissionGranted)
+        {
+            qDebug() << "Camera permission not granted - returning placeholder";
+            QImage placeholder(320, 240, QImage::Format_RGB888);
+            placeholder.fill(Qt::darkGray);
+            return imageToBase64(placeholder);
+        }
+    }
+
     initCamera();
 
     // Nếu camera chưa có frame, đợi tối đa 3 giây
@@ -144,13 +247,24 @@ void WebcamModule::startStream()
         return;
     }
 
-    initCamera();
+    // Xin quyền trước khi start stream
+    requestCameraPermission([this](bool granted)
+    {
+        if (granted)
+        {
+            initCamera();
 
-    streaming = true;
-    streamTimer->start(Constants::WEBCAM_REFRESH_RATE);
+            streaming = true;
+            streamTimer->start(Constants::WEBCAM_REFRESH_RATE);
 
-    qDebug() << "Webcam stream started, interval:"
-             << Constants::WEBCAM_REFRESH_RATE << "ms";
+            qDebug() << "Webcam stream started, interval:"
+                     << Constants::WEBCAM_REFRESH_RATE << "ms";
+        }
+        else
+        {
+            qDebug() << "Cannot start webcam stream - permission denied";
+        }
+    });
 }
 
 

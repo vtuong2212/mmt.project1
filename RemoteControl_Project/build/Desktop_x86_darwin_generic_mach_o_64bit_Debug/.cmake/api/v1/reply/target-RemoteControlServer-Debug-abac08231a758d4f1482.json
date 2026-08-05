@@ -15,6 +15,8 @@
 			"set_target_properties",
 			"include",
 			"find_package",
+			"find_dependency",
+			"_qt_internal_find_qt_dependencies",
 			"add_compile_definitions",
 			"project",
 			"include_directories",
@@ -23,10 +25,16 @@
 		"files" : 
 		[
 			"Server/CMakeLists.txt",
+			"/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake",
+			"/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake",
+			"build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/.qtcreator/cmake-helper/maintenance_tool_provider.cmake",
+			"/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
+			"/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+			"/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake",
+			"/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake",
+			"CMakeLists.txt",
 			"/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Core/Qt6CoreTargets.cmake",
 			"/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Core/Qt6CoreConfig.cmake",
-			"build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/.qtcreator/cmake-helper/maintenance_tool_provider.cmake",
-			"CMakeLists.txt",
 			"build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/.qtcreator/cmake-helper/qtcreator-project.cmake"
 		],
 		"nodes" : 
@@ -47,11 +55,11 @@
 				"parent" : 0
 			},
 			{
-				"file" : 4
+				"file" : 8
 			},
 			{
 				"command" : 4,
-				"file" : 4,
+				"file" : 8,
 				"line" : 19,
 				"parent" : 3
 			},
@@ -62,49 +70,113 @@
 				"parent" : 4
 			},
 			{
-				"file" : 2,
+				"file" : 7,
 				"parent" : 5
 			},
 			{
 				"command" : 3,
-				"file" : 2,
-				"line" : 57,
+				"file" : 7,
+				"line" : 40,
 				"parent" : 6
 			},
 			{
-				"file" : 1,
+				"file" : 6,
 				"parent" : 7
+			},
+			{
+				"command" : 6,
+				"file" : 6,
+				"line" : 50,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 142,
+				"parent" : 9
+			},
+			{
+				"command" : 4,
+				"file" : 4,
+				"line" : 76,
+				"parent" : 10
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 254,
+				"parent" : 11
+			},
+			{
+				"file" : 2,
+				"parent" : 12
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 55,
+				"parent" : 13
+			},
+			{
+				"file" : 1,
+				"parent" : 14
 			},
 			{
 				"command" : 2,
 				"file" : 1,
 				"line" : 62,
-				"parent" : 8
+				"parent" : 15
 			},
 			{
-				"command" : 6,
-				"file" : 4,
+				"command" : 4,
+				"file" : 3,
+				"line" : 235,
+				"parent" : 4
+			},
+			{
+				"file" : 10,
+				"parent" : 17
+			},
+			{
+				"command" : 3,
+				"file" : 10,
+				"line" : 57,
+				"parent" : 18
+			},
+			{
+				"file" : 9,
+				"parent" : 19
+			},
+			{
+				"command" : 2,
+				"file" : 9,
+				"line" : 62,
+				"parent" : 20
+			},
+			{
+				"command" : 8,
+				"file" : 8,
 				"line" : 3,
 				"parent" : 3
 			},
 			{
-				"file" : 5,
-				"parent" : 10
-			},
-			{
-				"command" : 5,
-				"file" : 5,
-				"line" : 82,
-				"parent" : 11
+				"file" : 11,
+				"parent" : 22
 			},
 			{
 				"command" : 7,
-				"file" : 4,
+				"file" : 11,
+				"line" : 82,
+				"parent" : 23
+			},
+			{
+				"command" : 9,
+				"file" : 8,
 				"line" : 24,
 				"parent" : 3
 			},
 			{
-				"command" : 8,
+				"command" : 10,
 				"file" : 0,
 				"line" : 39,
 				"parent" : 0
@@ -128,11 +200,23 @@
 				},
 				{
 					"backtrace" : 2,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_MULTIMEDIA_LIB"
+				},
+				{
+					"backtrace" : 2,
 					"define" : "QT_NETWORK_LIB"
 				},
 				{
-					"backtrace" : 12,
+					"backtrace" : 24,
 					"define" : "QT_QML_DEBUG"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_WIDGETS_LIB"
 				}
 			],
 			"frameworks" : 
@@ -146,6 +230,21 @@
 					"backtrace" : 2,
 					"isSystem" : true,
 					"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtWidgets.framework"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework"
 				}
 			],
 			"includes" : 
@@ -155,11 +254,11 @@
 					"path" : "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/include"
 				},
 				{
-					"backtrace" : 13,
+					"backtrace" : 25,
 					"path" : "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Common"
 				},
 				{
-					"backtrace" : 14,
+					"backtrace" : 26,
 					"path" : "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Server/../Common"
 				},
 				{
@@ -181,6 +280,21 @@
 					"backtrace" : 2,
 					"isSystem" : true,
 					"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Headers"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtWidgets.framework/Headers"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers"
 				}
 			],
 			"language" : "CXX",
@@ -242,7 +356,42 @@
 			},
 			{
 				"backtrace" : 2,
+				"fragment" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtWidgets.framework/Versions/A/QtWidgets",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/QtMultimedia",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
 				"fragment" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Versions/A/QtNetwork",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/QtGui",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 16,
+				"fragment" : "-framework AppKit",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 16,
+				"fragment" : "-framework OpenGL",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 16,
+				"fragment" : "-framework ImageIO",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 16,
+				"fragment" : "-framework Metal",
 				"role" : "libraries"
 			},
 			{
@@ -251,17 +400,17 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 9,
+				"backtrace" : 21,
 				"fragment" : "-framework IOKit",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 9,
+				"backtrace" : 21,
 				"fragment" : "-framework DiskArbitration",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 9,
+				"backtrace" : 21,
 				"fragment" : "-framework UniformTypeIdentifiers",
 				"role" : "libraries"
 			}

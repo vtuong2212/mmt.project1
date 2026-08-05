@@ -811,6 +811,7 @@
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qbytearraylist.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qbytearrayview.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qchar.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qcheckedint_impl.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qcompare.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qcompare_impl.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qcomparehelpers.h
@@ -842,10 +843,12 @@
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qiterable.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qiterator.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qlatin1stringview.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qline.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qlist.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qlogging.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qmalloc.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qmap.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qmargins.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qmath.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qmetacontainer.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qmetatype.h
@@ -859,7 +862,9 @@
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qobjectdefs_impl.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qoverload.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qpair.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qpoint.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qprocessordetection.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qrect.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qrefcount.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qscopedpointer.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qscopeguard.h
@@ -868,6 +873,7 @@
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qshareddata_impl.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qsharedpointer.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qsharedpointer_impl.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qsize.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qspan.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qstdlibdetection.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qstring.h
@@ -913,6 +919,34 @@
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qversiontagging.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qxptype_traits.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/Headers/qyieldcpu.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/QImage
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qcolor.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qimage.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qpaintdevice.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qpixelformat.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qpolygon.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qregion.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qrgb.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qrgba64.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qtgui-config.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qtguiexports.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qtguiglobal.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qtransform.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/Headers/qwindowdefs.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/Headers/QCamera
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/Headers/QMediaCaptureSession
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/Headers/QVideoFrame
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/Headers/QVideoSink
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/Headers/qcamera.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/Headers/qcameradevice.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/Headers/qmediacapturesession.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/Headers/qtmultimedia-config.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/Headers/qtmultimediaexports.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/Headers/qtmultimediaglobal.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/Headers/qtvideo.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/Headers/qvideoframe.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/Headers/qvideoframeformat.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/Headers/qvideosink.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Versions/A/Headers/QTcpServer
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Versions/A/Headers/QTcpSocket
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Versions/A/Headers/qabstractsocket.h
@@ -1784,7 +1818,9 @@ Server/CMakeFiles/RemoteControlServer.dir/Command/CommandManager.cpp.o
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/q20iterator.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/q20memory.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/q20type_traits.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/q20utility.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/q23type_traits.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/q23utility.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qabstracteventdispatcher.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qalgorithms.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qalloc.h
@@ -1803,6 +1839,7 @@ Server/CMakeFiles/RemoteControlServer.dir/Command/CommandManager.cpp.o
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qbytearraylist.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qbytearrayview.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qchar.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qcheckedint_impl.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qcompare.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qcompare_impl.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qcomparehelpers.h
@@ -1834,10 +1871,12 @@ Server/CMakeFiles/RemoteControlServer.dir/Command/CommandManager.cpp.o
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qiterable.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qiterator.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qlatin1stringview.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qline.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qlist.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qlogging.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qmalloc.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qmap.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qmargins.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qmath.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qmetacontainer.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qmetatype.h
@@ -1851,7 +1890,9 @@ Server/CMakeFiles/RemoteControlServer.dir/Command/CommandManager.cpp.o
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qobjectdefs_impl.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qoverload.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qpair.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qpoint.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qprocessordetection.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qrect.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qrefcount.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qscopedpointer.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qscopeguard.h
@@ -1860,6 +1901,7 @@ Server/CMakeFiles/RemoteControlServer.dir/Command/CommandManager.cpp.o
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qshareddata_impl.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qsharedpointer.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qsharedpointer_impl.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qsize.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qspan.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qstdlibdetection.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qstring.h
@@ -1904,6 +1946,34 @@ Server/CMakeFiles/RemoteControlServer.dir/Command/CommandManager.cpp.o
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qversiontagging.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qxptype_traits.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qyieldcpu.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/QImage
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qcolor.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qimage.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qpaintdevice.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qpixelformat.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qpolygon.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qregion.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qrgb.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qrgba64.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qtgui-config.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qtguiexports.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qtguiglobal.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qtransform.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qwindowdefs.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/QCamera
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/QMediaCaptureSession
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/QVideoFrame
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/QVideoSink
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qcamera.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qcameradevice.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qmediacapturesession.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qtmultimedia-config.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qtmultimediaexports.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qtmultimediaglobal.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qtvideo.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qvideoframe.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qvideoframeformat.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qvideosink.h
 
 Server/CMakeFiles/RemoteControlServer.dir/Modules/ApplicationModule.cpp.o
  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Server/Modules/ApplicationModule.cpp
@@ -10680,6 +10750,7 @@ Server/CMakeFiles/RemoteControlServer.dir/RemoteControlServer_autogen/mocs_compi
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qbytearraylist.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qbytearrayview.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qchar.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qcheckedint_impl.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qcompare.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qcompare_impl.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qcomparehelpers.h
@@ -10711,10 +10782,12 @@ Server/CMakeFiles/RemoteControlServer.dir/RemoteControlServer_autogen/mocs_compi
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qiterable.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qiterator.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qlatin1stringview.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qline.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qlist.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qlogging.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qmalloc.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qmap.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qmargins.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qmath.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qmetacontainer.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qmetatype.h
@@ -10728,7 +10801,9 @@ Server/CMakeFiles/RemoteControlServer.dir/RemoteControlServer_autogen/mocs_compi
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qobjectdefs_impl.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qoverload.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qpair.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qpoint.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qprocessordetection.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qrect.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qrefcount.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qscopedpointer.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qscopeguard.h
@@ -10737,6 +10812,7 @@ Server/CMakeFiles/RemoteControlServer.dir/RemoteControlServer_autogen/mocs_compi
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qshareddata_impl.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qsharedpointer.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qsharedpointer_impl.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qsize.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qspan.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qstdlibdetection.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qstring.h
@@ -10784,6 +10860,34 @@ Server/CMakeFiles/RemoteControlServer.dir/RemoteControlServer_autogen/mocs_compi
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qversiontagging.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qxptype_traits.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qyieldcpu.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/QImage
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qcolor.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qimage.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qpaintdevice.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qpixelformat.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qpolygon.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qregion.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qrgb.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qrgba64.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qtgui-config.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qtguiexports.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qtguiglobal.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qtransform.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qwindowdefs.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/QCamera
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/QMediaCaptureSession
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/QVideoFrame
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/QVideoSink
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qcamera.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qcameradevice.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qmediacapturesession.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qtmultimedia-config.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qtmultimediaexports.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qtmultimediaglobal.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qtvideo.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qvideoframe.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qvideoframeformat.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qvideosink.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Headers/QTcpServer
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Headers/QTcpSocket
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Headers/qabstractsocket.h
@@ -11644,7 +11748,6 @@ Server/CMakeFiles/RemoteControlServer.dir/main.cpp.o
  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Common/Protocol.h
  /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Server/Network/ServerSocket.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/QByteArray
- /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/QCoreApplication
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/QDataStream
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/QDebug
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/QIODevice
@@ -11680,6 +11783,7 @@ Server/CMakeFiles/RemoteControlServer.dir/main.cpp.o
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qbytearraylist.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qbytearrayview.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qchar.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qcheckedint_impl.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qcompare.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qcompare_impl.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qcomparehelpers.h
@@ -11714,10 +11818,13 @@ Server/CMakeFiles/RemoteControlServer.dir/main.cpp.o
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qiterable.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qiterator.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qlatin1stringview.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qline.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qlist.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qlocale.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qlogging.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qmalloc.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qmap.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qmargins.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qmath.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qmetacontainer.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qmetatype.h
@@ -11732,7 +11839,9 @@ Server/CMakeFiles/RemoteControlServer.dir/main.cpp.o
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qobjectdefs_impl.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qoverload.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qpair.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qpoint.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qprocessordetection.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qrect.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qrefcount.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qscopedpointer.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qscopeguard.h
@@ -11741,6 +11850,7 @@ Server/CMakeFiles/RemoteControlServer.dir/main.cpp.o
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qshareddata_impl.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qsharedpointer.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qsharedpointer_impl.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qsize.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qspan.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qstdlibdetection.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qstring.h
@@ -11786,6 +11896,38 @@ Server/CMakeFiles/RemoteControlServer.dir/main.cpp.o
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qversiontagging.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qxptype_traits.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qyieldcpu.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/QGuiApplication
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/QImage
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qcolor.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qguiapplication.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qguiapplication_platform.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qimage.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qinputmethod.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qpaintdevice.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qpixelformat.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qpolygon.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qregion.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qrgb.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qrgba64.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qtgui-config.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qtguiexports.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qtguiglobal.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qtransform.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qwindowdefs.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/QCamera
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/QMediaCaptureSession
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/QVideoFrame
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/QVideoSink
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qcamera.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qcameradevice.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qmediacapturesession.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qtmultimedia-config.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qtmultimediaexports.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qtmultimediaglobal.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qtvideo.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qvideoframe.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qvideoframeformat.h
+ /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qvideosink.h
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Headers/QTcpServer
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Headers/QTcpSocket
  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Headers/qabstractsocket.h

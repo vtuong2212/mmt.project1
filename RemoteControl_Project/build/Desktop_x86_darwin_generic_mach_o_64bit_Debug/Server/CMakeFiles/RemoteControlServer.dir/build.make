@@ -259,8 +259,9 @@ Server/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/Modules/Fi
 Server/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/Modules/WebcamModule.cpp.o
 Server/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/Modules/PowerModule.cpp.o
 Server/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/build.make
-Server/RemoteControlServer: /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Versions/A/QtNetwork
 Server/RemoteControlServer: /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtWidgets.framework/Versions/A/QtWidgets
+Server/RemoteControlServer: /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/QtMultimedia
+Server/RemoteControlServer: /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Versions/A/QtNetwork
 Server/RemoteControlServer: /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/QtGui
 Server/RemoteControlServer: /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/QtCore
 Server/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/link.txt

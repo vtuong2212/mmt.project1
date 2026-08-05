@@ -13,23 +13,8 @@
 			"path" : "build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/.qtcreator/cmake-helper/package-manager.cmake"
 		},
 		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeSystem.cmake.in"
-		},
-		{
 			"isGenerated" : true,
 			"path" : "build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/CMakeFiles/3.30.5/CMakeSystem.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeUnixFindMake.cmake"
 		},
 		{
 			"isGenerated" : true,
@@ -44,251 +29,6 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Platform/Darwin-Initialize.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeDetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Platform/Darwin-Determine-CXX.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeCompilerIdDetection.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/ADSP-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/ARMCC-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/ARMClang-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/AppleClang-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/Clang-DetermineCompilerInternal.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/Borland-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/Clang-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/Clang-DetermineCompilerInternal.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/Cray-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/CrayClang-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/Embarcadero-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/Fujitsu-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/GHS-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/HP-CXX-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/IAR-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/Intel-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/MSVC-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/NVHPC-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/NVIDIA-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/OrangeC-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/PGI-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/PathScale-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/SCO-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/TI-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/TIClang-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/Tasking-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/Watcom-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/XL-CXX-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeFindBinUtils.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeCXXCompiler.cmake.in"
 		},
 		{
 			"isGenerated" : true,
@@ -373,70 +113,6 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeTestCompilerCommon.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeParseImplicitIncludeInfo.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeParseImplicitLinkInfo.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeParseLibraryArchitecture.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeTestCompilerCommon.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeDetermineCompilerSupport.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/Internal/FeatureTesting.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeCXXCompiler.cmake.in"
-		},
-		{
-			"isGenerated" : true,
-			"path" : "build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -1811,6 +1487,229 @@
 		{
 			"isExternal" : true,
 			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Gui/Qt6GuiTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Gui/Qt6GuiPlugins.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Gui/Qt6GuiVersionlessAliasTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Multimedia/Qt6MultimediaConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Multimedia/Qt6MultimediaConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Multimedia/Qt6MultimediaConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Multimedia/Qt6MultimediaDependencies.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Concurrent/Qt6ConcurrentConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Concurrent/Qt6ConcurrentConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Concurrent/Qt6ConcurrentConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Concurrent/Qt6ConcurrentDependencies.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Concurrent/Qt6ConcurrentTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Concurrent/Qt6ConcurrentTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Concurrent/Qt6ConcurrentTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Concurrent/Qt6ConcurrentAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Concurrent/Qt6ConcurrentVersionlessAliasTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Multimedia/Qt6MultimediaTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Multimedia/Qt6MultimediaTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Multimedia/Qt6MultimediaTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Multimedia/Qt6MultimediaAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Multimedia/Qt6MultimediaMacros.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Multimedia/Qt6MultimediaPlugins.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Multimedia/Qt6QDarwinMediaPluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Multimedia/Qt6QDarwinMediaPluginTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Multimedia/Qt6QDarwinMediaPluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Multimedia/Qt6QDarwinMediaPluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Multimedia/Qt6QDarwinMediaPluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Multimedia/Qt6QFFmpegMediaPluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Multimedia/Qt6QFFmpegMediaPluginTargetsPrecheck.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Multimedia/Qt6QFFmpegMediaPluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Multimedia/Qt6QFFmpegMediaPluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Multimedia/Qt6QFFmpegMediaPluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Multimedia/Qt6MultimediaVersionlessAliasTargets.cmake"
 		},
 		{
 			"isExternal" : true,

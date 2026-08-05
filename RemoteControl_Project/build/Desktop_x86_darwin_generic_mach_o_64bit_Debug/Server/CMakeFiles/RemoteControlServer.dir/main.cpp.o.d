@@ -1010,4 +1010,30 @@ Server/CMakeFiles/RemoteControlServer.dir/main.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/sanitizer/tsan_interface.h \
   /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Server/Command/../Modules/FileModule.h \
   /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Server/Command/../Modules/WebcamModule.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/QImage \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qimage.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qcolor.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qrgb.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qrgba64.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qpaintdevice.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qrect.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qpixelformat.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qtransform.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qpolygon.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qregion.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qline.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/QCamera \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qcamera.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qcameradevice.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qtvideo.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qtmultimediaexports.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qvideoframe.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qtmultimediaglobal.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qtmultimedia-config.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qvideoframeformat.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/QMediaCaptureSession \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qmediacapturesession.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/QVideoSink \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/qvideosink.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers/QVideoFrame \
   /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Server/Command/../Modules/PowerModule.h

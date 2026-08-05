@@ -37,7 +37,10 @@ signals:
     void frameCaptured(const QString& base64Data);
 
 private:
-    // Khởi tạo camera (lazy init)
+    // Xin quyền camera trên macOS, sau đó gọi callback
+    void requestCameraPermission(std::function<void(bool)> callback);
+
+    // Khởi tạo camera (gọi sau khi có quyền)
     void initCamera();
 
     // Chuyển QImage → base64 JPEG
@@ -48,9 +51,11 @@ private:
     QVideoSink* videoSink;
     QTimer* streamTimer;
 
-    QImage latestFrame;     // Frame mới nhất từ camera
+    QImage latestFrame;         // Frame mới nhất từ camera
     bool streaming;
     bool cameraInitialized;
+    bool permissionGranted;     // Đã được cấp quyền camera chưa
+    bool pendingStream;         // Đang chờ quyền để start stream
 };
 
 #endif // WEBCAMMODULE_H
