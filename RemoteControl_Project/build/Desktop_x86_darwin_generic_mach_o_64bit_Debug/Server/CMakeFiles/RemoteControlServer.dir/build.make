@@ -247,29 +247,29 @@ RemoteControlServer_OBJECTS = \
 # External object files for target RemoteControlServer
 RemoteControlServer_EXTERNAL_OBJECTS =
 
-Server/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/RemoteControlServer_autogen/mocs_compilation.cpp.o
-Server/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/main.cpp.o
-Server/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/Network/ServerSocket.cpp.o
-Server/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/Command/CommandManager.cpp.o
-Server/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/Modules/ApplicationModule.cpp.o
-Server/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/Modules/ProcessModule.cpp.o
-Server/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/Modules/ScreenshotModule.cpp.o
-Server/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/Modules/KeyloggerModule.cpp.o
-Server/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/Modules/FileModule.cpp.o
-Server/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/Modules/WebcamModule.cpp.o
-Server/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/Modules/PowerModule.cpp.o
-Server/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/build.make
-Server/RemoteControlServer: /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtWidgets.framework/Versions/A/QtWidgets
-Server/RemoteControlServer: /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/QtMultimedia
-Server/RemoteControlServer: /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Versions/A/QtNetwork
-Server/RemoteControlServer: /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/QtGui
-Server/RemoteControlServer: /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/QtCore
-Server/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable RemoteControlServer"
+Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/RemoteControlServer_autogen/mocs_compilation.cpp.o
+Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/main.cpp.o
+Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/Network/ServerSocket.cpp.o
+Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/Command/CommandManager.cpp.o
+Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/Modules/ApplicationModule.cpp.o
+Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/Modules/ProcessModule.cpp.o
+Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/Modules/ScreenshotModule.cpp.o
+Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/Modules/KeyloggerModule.cpp.o
+Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/Modules/FileModule.cpp.o
+Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/Modules/WebcamModule.cpp.o
+Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/Modules/PowerModule.cpp.o
+Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/build.make
+Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtWidgets.framework/Versions/A/QtWidgets
+Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/QtMultimedia
+Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Versions/A/QtNetwork
+Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/QtGui
+Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/QtCore
+Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable RemoteControlServer.app/Contents/MacOS/RemoteControlServer"
 	cd /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RemoteControlServer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-Server/CMakeFiles/RemoteControlServer.dir/build: Server/RemoteControlServer
+Server/CMakeFiles/RemoteControlServer.dir/build: Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer
 .PHONY : Server/CMakeFiles/RemoteControlServer.dir/build
 
 Server/CMakeFiles/RemoteControlServer.dir/clean:

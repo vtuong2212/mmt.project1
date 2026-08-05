@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Server/RemoteControlServer"
+			"path" : "Client/RemoteControlClient"
 		}
 	],
 	"backtrace" : 1,
@@ -24,15 +24,16 @@
 		],
 		"files" : 
 		[
-			"Server/CMakeLists.txt",
+			"Client/CMakeLists.txt",
+			"/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake",
+			"/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake",
+			"build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/.qtcreator/cmake-helper/maintenance_tool_provider.cmake",
+			"CMakeLists.txt",
 			"/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake",
 			"/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake",
-			"build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/.qtcreator/cmake-helper/maintenance_tool_provider.cmake",
 			"/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
 			"/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
 			"/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake",
-			"/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake",
-			"CMakeLists.txt",
 			"/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Core/Qt6CoreTargets.cmake",
 			"/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/cmake/Qt6Core/Qt6CoreConfig.cmake",
 			"build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/.qtcreator/cmake-helper/qtcreator-project.cmake"
@@ -45,21 +46,21 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 33,
+				"line" : 38,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 44,
+				"line" : 50,
 				"parent" : 0
 			},
 			{
-				"file" : 8
+				"file" : 4
 			},
 			{
 				"command" : 4,
-				"file" : 8,
+				"file" : 4,
 				"line" : 19,
 				"parent" : 3
 			},
@@ -70,62 +71,78 @@
 				"parent" : 4
 			},
 			{
-				"file" : 7,
-				"parent" : 5
-			},
-			{
-				"command" : 3,
-				"file" : 7,
-				"line" : 40,
-				"parent" : 6
-			},
-			{
-				"file" : 6,
-				"parent" : 7
-			},
-			{
-				"command" : 6,
-				"file" : 6,
-				"line" : 50,
-				"parent" : 8
-			},
-			{
-				"command" : 5,
-				"file" : 5,
-				"line" : 142,
-				"parent" : 9
-			},
-			{
-				"command" : 4,
-				"file" : 4,
-				"line" : 76,
-				"parent" : 10
-			},
-			{
-				"command" : 4,
-				"file" : 3,
-				"line" : 254,
-				"parent" : 11
-			},
-			{
 				"file" : 2,
-				"parent" : 12
+				"parent" : 5
 			},
 			{
 				"command" : 3,
 				"file" : 2,
 				"line" : 55,
-				"parent" : 13
+				"parent" : 6
 			},
 			{
 				"file" : 1,
-				"parent" : 14
+				"parent" : 7
 			},
 			{
 				"command" : 2,
 				"file" : 1,
 				"line" : 62,
+				"parent" : 8
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 40,
+				"parent" : 6
+			},
+			{
+				"file" : 9,
+				"parent" : 10
+			},
+			{
+				"command" : 6,
+				"file" : 9,
+				"line" : 50,
+				"parent" : 11
+			},
+			{
+				"command" : 5,
+				"file" : 8,
+				"line" : 142,
+				"parent" : 12
+			},
+			{
+				"command" : 4,
+				"file" : 7,
+				"line" : 76,
+				"parent" : 13
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 254,
+				"parent" : 14
+			},
+			{
+				"file" : 6,
 				"parent" : 15
+			},
+			{
+				"command" : 3,
+				"file" : 6,
+				"line" : 55,
+				"parent" : 16
+			},
+			{
+				"file" : 5,
+				"parent" : 17
+			},
+			{
+				"command" : 2,
+				"file" : 5,
+				"line" : 62,
+				"parent" : 18
 			},
 			{
 				"command" : 4,
@@ -134,51 +151,51 @@
 				"parent" : 4
 			},
 			{
-				"file" : 10,
-				"parent" : 17
-			},
-			{
-				"command" : 3,
-				"file" : 10,
-				"line" : 57,
-				"parent" : 18
-			},
-			{
-				"file" : 9,
-				"parent" : 19
-			},
-			{
-				"command" : 2,
-				"file" : 9,
-				"line" : 62,
+				"file" : 11,
 				"parent" : 20
 			},
 			{
+				"command" : 3,
+				"file" : 11,
+				"line" : 57,
+				"parent" : 21
+			},
+			{
+				"file" : 10,
+				"parent" : 22
+			},
+			{
+				"command" : 2,
+				"file" : 10,
+				"line" : 62,
+				"parent" : 23
+			},
+			{
 				"command" : 8,
-				"file" : 8,
+				"file" : 4,
 				"line" : 3,
 				"parent" : 3
 			},
 			{
-				"file" : 11,
-				"parent" : 22
+				"file" : 12,
+				"parent" : 25
 			},
 			{
 				"command" : 7,
-				"file" : 11,
+				"file" : 12,
 				"line" : 82,
-				"parent" : 23
+				"parent" : 26
 			},
 			{
 				"command" : 9,
-				"file" : 8,
+				"file" : 4,
 				"line" : 24,
 				"parent" : 3
 			},
 			{
 				"command" : 10,
 				"file" : 0,
-				"line" : 39,
+				"line" : 45,
 				"parent" : 0
 			}
 		]
@@ -204,14 +221,10 @@
 				},
 				{
 					"backtrace" : 2,
-					"define" : "QT_MULTIMEDIA_LIB"
-				},
-				{
-					"backtrace" : 2,
 					"define" : "QT_NETWORK_LIB"
 				},
 				{
-					"backtrace" : 24,
+					"backtrace" : 27,
 					"define" : "QT_QML_DEBUG"
 				},
 				{
@@ -234,32 +247,27 @@
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework"
-				},
-				{
-					"backtrace" : 2,
-					"isSystem" : true,
 					"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtWidgets.framework"
 				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework"
+					"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 0,
-					"path" : "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/include"
+					"path" : "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Client/RemoteControlClient_autogen/include"
 				},
 				{
-					"backtrace" : 25,
+					"backtrace" : 28,
 					"path" : "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Common"
 				},
 				{
-					"backtrace" : 26,
-					"path" : "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Server/../Common"
+					"backtrace" : 29,
+					"path" : "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Client/../Common"
 				},
 				{
 					"backtrace" : 2,
@@ -284,17 +292,12 @@
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers"
-				},
-				{
-					"backtrace" : 2,
-					"isSystem" : true,
 					"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtWidgets.framework/Headers"
 				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers"
+					"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers"
 				}
 			],
 			"language" : "CXX",
@@ -326,14 +329,14 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 0,
-			"id" : "RemoteControlServer_autogen::@20a40c4b36ca103854cb"
+			"id" : "RemoteControlClient_autogen_timestamp_deps::@39d0ae6511a0d9878f7b"
 		},
 		{
-			"id" : "RemoteControlServer_autogen_timestamp_deps::@20a40c4b36ca103854cb"
+			"backtrace" : 0,
+			"id" : "RemoteControlClient_autogen::@39d0ae6511a0d9878f7b"
 		}
 	],
-	"id" : "RemoteControlServer::@20a40c4b36ca103854cb",
+	"id" : "RemoteControlClient::@39d0ae6511a0d9878f7b",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -356,41 +359,36 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtWidgets.framework/Versions/A/QtWidgets",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 2,
-				"fragment" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/QtMultimedia",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 2,
 				"fragment" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Versions/A/QtNetwork",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
+				"fragment" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtWidgets.framework/Versions/A/QtWidgets",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
 				"fragment" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/QtGui",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 16,
+				"backtrace" : 19,
 				"fragment" : "-framework AppKit",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 16,
+				"backtrace" : 19,
 				"fragment" : "-framework OpenGL",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 16,
+				"backtrace" : 19,
 				"fragment" : "-framework ImageIO",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 16,
+				"backtrace" : 19,
 				"fragment" : "-framework Metal",
 				"role" : "libraries"
 			},
@@ -400,29 +398,29 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 21,
+				"backtrace" : 24,
 				"fragment" : "-framework IOKit",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 21,
+				"backtrace" : 24,
 				"fragment" : "-framework DiskArbitration",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 21,
+				"backtrace" : 24,
 				"fragment" : "-framework UniformTypeIdentifiers",
 				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "RemoteControlServer",
-	"nameOnDisk" : "RemoteControlServer",
+	"name" : "RemoteControlClient",
+	"nameOnDisk" : "RemoteControlClient",
 	"paths" : 
 	{
-		"build" : "Server",
-		"source" : "Server"
+		"build" : "Client",
+		"source" : "Client"
 	},
 	"sourceGroups" : 
 	[
@@ -455,21 +453,23 @@
 				16,
 				17,
 				18,
-				19
+				19,
+				21
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				20
+				20,
+				22
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				21
+				23
 			]
 		}
 	],
@@ -479,124 +479,135 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/mocs_compilation.cpp",
+			"path" : "build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Client/RemoteControlClient_autogen/mocs_compilation.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Server/main.cpp",
+			"path" : "Client/main.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Server/Network/ServerSocket.cpp",
+			"path" : "Client/Network/ClientSocket.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Server/Command/CommandManager.cpp",
+			"path" : "Client/GUI/MainWindow.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Server/Modules/ApplicationModule.cpp",
+			"path" : "Client/Pages/ApplicationPage.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Server/Modules/ProcessModule.cpp",
+			"path" : "Client/Pages/ProcessPage.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Server/Modules/ScreenshotModule.cpp",
+			"path" : "Client/Pages/ScreenshotPage.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Server/Modules/KeyloggerModule.cpp",
+			"path" : "Client/Pages/KeyloggerPage.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Server/Modules/FileModule.cpp",
+			"path" : "Client/Pages/FilePage.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Server/Modules/WebcamModule.cpp",
+			"path" : "Client/Pages/WebcamPage.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Server/Modules/PowerModule.cpp",
+			"path" : "Client/Pages/PowerPage.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Server/Network/ServerSocket.h",
+			"path" : "Client/Network/ClientSocket.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Server/Command/CommandManager.h",
+			"path" : "Client/GUI/MainWindow.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Server/Modules/ApplicationModule.h",
+			"path" : "Client/Pages/ApplicationPage.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Server/Modules/ProcessModule.h",
+			"path" : "Client/Pages/ProcessPage.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Server/Modules/ScreenshotModule.h",
+			"path" : "Client/Pages/ScreenshotPage.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Server/Modules/KeyloggerModule.h",
+			"path" : "Client/Pages/KeyloggerPage.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Server/Modules/FileModule.h",
+			"path" : "Client/Pages/FilePage.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Server/Modules/WebcamModule.h",
+			"path" : "Client/Pages/WebcamPage.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Server/Modules/PowerModule.h",
+			"path" : "Client/Pages/PowerPage.h",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/timestamp",
+			"backtrace" : 1,
+			"path" : "Client/GUI/MainWindow.ui",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Server/RemoteControlServer_autogen/timestamp.rule",
+			"path" : "build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Client/RemoteControlClient_autogen/include/GUI/ui_MainWindow.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Client/RemoteControlClient_autogen/timestamp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Client/RemoteControlClient_autogen/timestamp.rule",
 			"sourceGroupIndex" : 3
 		}
 	],

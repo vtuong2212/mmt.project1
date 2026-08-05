@@ -24,7 +24,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/RemoteControlServer.dir/RemoteControlServer_autogen/mocs_compilation.cpp.o.d"
   "CMakeFiles/RemoteControlServer.dir/main.cpp.o"
   "CMakeFiles/RemoteControlServer.dir/main.cpp.o.d"
-  "RemoteControlServer"
+  "RemoteControlServer.app/Contents/MacOS/RemoteControlServer"
   "RemoteControlServer.pdb"
   "RemoteControlServer_autogen/mocs_compilation.cpp"
   "RemoteControlServer_autogen/timestamp"

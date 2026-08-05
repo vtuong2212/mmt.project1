@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Server/RemoteControlServer"
+			"path" : "Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer"
 		}
 	],
 	"backtrace" : 1,
@@ -51,7 +51,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 44,
+				"line" : 59,
 				"parent" : 0
 			},
 			{
@@ -178,7 +178,7 @@
 			{
 				"command" : 10,
 				"file" : 0,
-				"line" : 39,
+				"line" : 54,
 				"parent" : 0
 			}
 		]
@@ -201,6 +201,10 @@
 				{
 					"backtrace" : 2,
 					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_MULTIMEDIA_LIB"
 				},
 				{
 					"backtrace" : 2,
@@ -236,6 +240,11 @@
 					"backtrace" : 2,
 					"isSystem" : true,
 					"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtWidgets.framework"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework"
 				}
 			],
 			"includes" : 
@@ -281,6 +290,11 @@
 					"backtrace" : 2,
 					"isSystem" : true,
 					"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtWidgets.framework/Headers"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Headers"
 				}
 			],
 			"language" : "CXX",
@@ -312,11 +326,11 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 0,
-			"id" : "RemoteControlServer_autogen::@20a40c4b36ca103854cb"
+			"id" : "RemoteControlServer_autogen_timestamp_deps::@20a40c4b36ca103854cb"
 		},
 		{
-			"id" : "RemoteControlServer_autogen_timestamp_deps::@20a40c4b36ca103854cb"
+			"backtrace" : 0,
+			"id" : "RemoteControlServer_autogen::@20a40c4b36ca103854cb"
 		}
 	],
 	"id" : "RemoteControlServer::@20a40c4b36ca103854cb",
@@ -342,12 +356,17 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Versions/A/QtNetwork",
+				"fragment" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtWidgets.framework/Versions/A/QtWidgets",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtWidgets.framework/Versions/A/QtWidgets",
+				"fragment" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtMultimedia.framework/Versions/A/QtMultimedia",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Versions/A/QtNetwork",
 				"role" : "libraries"
 			},
 			{
