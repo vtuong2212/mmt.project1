@@ -1,4 +1,4 @@
-#include <QCoreApplication>
+#include <QGuiApplication>
 #include <QDebug>
 
 #include "Network/ServerSocket.h"
@@ -6,7 +6,7 @@
 
 int main(int argc, char *argv[])
 {
-    QCoreApplication a(argc, argv);
+    QGuiApplication a(argc, argv);
 
     qDebug() << "========================================";
     qDebug() << " Remote Control Server";

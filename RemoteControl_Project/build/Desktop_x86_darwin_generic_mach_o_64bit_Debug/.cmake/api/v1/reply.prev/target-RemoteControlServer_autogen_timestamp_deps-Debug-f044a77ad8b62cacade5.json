@@ -1,0 +1,27 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"Server/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"id" : "RemoteControlServer_autogen_timestamp_deps::@20a40c4b36ca103854cb",
+	"isGeneratorProvided" : true,
+	"name" : "RemoteControlServer_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "Server",
+		"source" : "Server"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

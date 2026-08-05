@@ -260,6 +260,7 @@ Server/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/Modules/We
 Server/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/Modules/PowerModule.cpp.o
 Server/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/build.make
 Server/RemoteControlServer: /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Versions/A/QtNetwork
+Server/RemoteControlServer: /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Versions/A/QtGui
 Server/RemoteControlServer: /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Versions/A/QtCore
 Server/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable RemoteControlServer"

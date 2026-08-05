@@ -46,6 +46,15 @@ bool ServerSocket::startServer(int port)
 
 void ServerSocket::onNewConnection()
 {
+    // Cleanup socket cũ nếu còn tồn tại
+    if (clientSocket)
+    {
+        clientSocket->disconnect();  // Ngắt tất cả signals
+        clientSocket->close();
+        clientSocket->deleteLater();
+        clientSocket = nullptr;
+    }
+
     clientSocket = server->nextPendingConnection();
 
     if (!clientSocket)
@@ -125,6 +134,13 @@ void ServerSocket::onClientDisconnected()
 
     buffer.clear();
 
+    // Cleanup socket để tránh dangling pointer
+    if (clientSocket)
+    {
+        clientSocket->deleteLater();
+        clientSocket = nullptr;
+    }
+
     emit clientDisconnected();
 }
 
@@ -137,10 +153,13 @@ void ServerSocket::stopServer()
 {
     if (clientSocket)
     {
+        clientSocket->disconnect();  // Ngắt signals trước
         clientSocket->close();
+        clientSocket->deleteLater();
+        clientSocket = nullptr;
     }
 
-    if (server->isListening())
+    if (server && server->isListening())
     {
         server->close();
     }

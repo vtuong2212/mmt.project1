@@ -45,27 +45,64 @@ QString WebcamModule::captureWebcam()
     // trả về placeholder nếu không có webcam library
 
 #ifdef Q_OS_WIN
-    // Thử dùng ffmpeg để chụp 1 frame từ webcam
-    QProcess process;
-    QString tempFile = QDir::tempPath() + "/webcam_capture.jpg";
+    // Bước 1: Tìm tên webcam device qua ffmpeg
+    QProcess listProcess;
+    listProcess.start("ffmpeg",
+                      QStringList() << "-list_devices" << "true"
+                                    << "-f" << "dshow"
+                                    << "-i" << "dummy");
+    listProcess.waitForFinished(5000);
 
-    // Dùng ffmpeg capture 1 frame
-    process.start("ffmpeg",
-                  QStringList() << "-y"
-                                << "-f" << "dshow"
-                                << "-i" << "video=0"
-                                << "-frames:v" << "1"
-                                << tempFile);
-    process.waitForFinished(5000);
+    // ffmpeg output device list vào stderr
+    QString deviceOutput = listProcess.readAllStandardError();
+    QString deviceName;
 
-    QFile file(tempFile);
-    if (file.exists() && file.open(QIODevice::ReadOnly))
+    // Tìm dòng chứa "video" device
+    QStringList lines = deviceOutput.split("\n");
+    for (const QString& line : lines)
     {
-        QByteArray data = file.readAll();
-        file.close();
-        file.remove();
+        // Format: [dshow @ ...] "Device Name" (video)
+        if (line.contains("(video)"))
+        {
+            int firstQuote = line.indexOf('"');
+            int lastQuote = line.indexOf('"', firstQuote + 1);
+            if (firstQuote >= 0 && lastQuote > firstQuote)
+            {
+                deviceName = line.mid(firstQuote + 1,
+                                      lastQuote - firstQuote - 1);
+                break;
+            }
+        }
+    }
 
-        return data.toBase64();
+    if (!deviceName.isEmpty())
+    {
+        QProcess process;
+        QString tempFile = QDir::tempPath() + "/webcam_capture.jpg";
+
+        // Dùng ffmpeg capture 1 frame với tên device chính xác
+        process.start("ffmpeg",
+                      QStringList() << "-y"
+                                    << "-f" << "dshow"
+                                    << "-i" << ("video=" + deviceName)
+                                    << "-frames:v" << "1"
+                                    << tempFile);
+        process.waitForFinished(10000);
+
+        QFile file(tempFile);
+        if (file.exists() && file.open(QIODevice::ReadOnly))
+        {
+            QByteArray data = file.readAll();
+            file.close();
+            file.remove();
+
+            qDebug() << "Webcam captured via ffmpeg, device:" << deviceName;
+            return data.toBase64();
+        }
+    }
+    else
+    {
+        qDebug() << "No webcam device found!";
     }
 #endif
 
