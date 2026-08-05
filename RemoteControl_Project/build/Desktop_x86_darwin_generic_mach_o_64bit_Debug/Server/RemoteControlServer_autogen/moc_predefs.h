@@ -3,6 +3,7 @@ clang++: warning: argument unused during compilation: '-c' [-Wunused-command-lin
 #define QT_GUI_LIB 1
 #define QT_NETWORK_LIB 1
 #define QT_QML_DEBUG 1
+#define QT_WIDGETS_LIB 1
 #define SIZEOF_DPTR (sizeof(void*))
 #define TARGET_IPHONE_SIMULATOR 0
 #define TARGET_OS_ARROW 1

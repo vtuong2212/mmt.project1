@@ -15,8 +15,8 @@ set(CMAKE_AUTOMOC ON)   # Tự động chạy MOC cho Q_OBJECT
 set(CMAKE_AUTOUIC ON)   # Tự động xử lý file .ui
 set(CMAKE_AUTORCC ON)   # Tự động xử lý file .qrc (nếu có)
 
-# Tìm Qt6 (Core, Network, Widgets)
-find_package(Qt6 REQUIRED COMPONENTS Core Network Widgets Gui)
+# Tìm Qt6 (Core, Network, Widgets, Multimedia)
+find_package(Qt6 REQUIRED COMPONENTS Core Network Widgets Gui Multimedia)
 
 #============================================
 # Include Common headers cho cả 2 targets

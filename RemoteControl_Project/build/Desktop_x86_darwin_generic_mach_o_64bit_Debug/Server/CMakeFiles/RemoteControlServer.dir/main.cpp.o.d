@@ -1,7 +1,8 @@
 Server/CMakeFiles/RemoteControlServer.dir/main.cpp.o: \
   /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Server/main.cpp \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/QCoreApplication \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qcoreapplication.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/QGuiApplication \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qguiapplication.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qtguiglobal.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qglobal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/type_traits \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1/__config \
@@ -707,6 +708,9 @@ Server/CMakeFiles/RemoteControlServer.dir/main.cpp.o: \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qtresource.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qttranslation.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qversiontagging.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qtgui-config.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qtguiexports.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qcoreapplication.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qstring.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qchar.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qcompare.h \
@@ -941,7 +945,10 @@ Server/CMakeFiles/RemoteControlServer.dir/main.cpp.o: \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qdeadlinetimer.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qnativeinterface.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qcoreapplication_platform.h \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/QDebug \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qwindowdefs.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qinputmethod.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qlocale.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qvariant.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qdebug.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qtextstream.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qcontiguouscache.h \
@@ -956,6 +963,14 @@ Server/CMakeFiles/RemoteControlServer.dir/main.cpp.o: \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qhash.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qvarlengtharray.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qalloc.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/q23utility.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/q20utility.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qpoint.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qcheckedint_impl.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qsize.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qmargins.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers/qguiapplication_platform.h \
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/QDebug \
   /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Server/Network/ServerSocket.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/QObject \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Headers/QTcpServer \
@@ -971,9 +986,6 @@ Server/CMakeFiles/RemoteControlServer.dir/main.cpp.o: \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Headers/qhostaddress.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Headers/QTcpSocket \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Headers/qtcpsocket.h \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qvariant.h \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/q23utility.h \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/q20utility.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/QString \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/QByteArray \
   /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Server/Network/../../Common/Packet.h \

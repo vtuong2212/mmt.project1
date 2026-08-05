@@ -2,27 +2,27 @@
 
 #include <QDebug>
 #include <QBuffer>
-#include <QImage>
-#include <QProcess>
-#include <QDir>
-#include <QFile>
-
-#ifdef Q_OS_WIN
-#include <Windows.h>
-#include <dshow.h>
-#endif
+#include <QMediaDevices>
+#include <QCameraDevice>
+#include <QCoreApplication>
+#include <QElapsedTimer>
 
 WebcamModule::WebcamModule(QObject *parent)
-    : QObject(parent), streaming(false)
+    : QObject(parent),
+      camera(nullptr),
+      captureSession(nullptr),
+      videoSink(nullptr),
+      streaming(false),
+      cameraInitialized(false)
 {
     streamTimer = new QTimer(this);
 
+    // Khi timer tick, gửi frame mới nhất cho client
     connect(streamTimer, &QTimer::timeout, this, [this]()
     {
-        QString base64 = captureWebcam();
-        if (!base64.isEmpty())
+        if (!latestFrame.isNull())
         {
-            emit frameCaptured(base64);
+            emit frameCaptured(imageToBase64(latestFrame));
         }
     });
 }
@@ -30,94 +30,105 @@ WebcamModule::WebcamModule(QObject *parent)
 WebcamModule::~WebcamModule()
 {
     stopStream();
+
+    if (camera)
+    {
+        camera->stop();
+    }
 }
 
 
 //---------------------------------------------------
-// Chụp webcam 1 lần
-// Sử dụng OpenCV hoặc Windows API
-// Ở đây dùng cách đơn giản: capture qua command line
+// Khởi tạo camera (gọi 1 lần, lazy init)
+// Dùng QCamera + QVideoSink từ Qt Multimedia
+//---------------------------------------------------
+
+void WebcamModule::initCamera()
+{
+    if (cameraInitialized)
+    {
+        return;
+    }
+
+    // Kiểm tra có camera nào không
+    QList<QCameraDevice> cameras = QMediaDevices::videoInputs();
+
+    if (cameras.isEmpty())
+    {
+        qDebug() << "No webcam device found!";
+        return;
+    }
+
+    qDebug() << "Found" << cameras.size() << "camera(s):";
+    for (const QCameraDevice& cam : cameras)
+    {
+        qDebug() << "  -" << cam.description();
+    }
+
+    // Tạo camera với device đầu tiên
+    camera = new QCamera(cameras.first(), this);
+    captureSession = new QMediaCaptureSession(this);
+    videoSink = new QVideoSink(this);
+
+    // Kết nối pipeline: Camera → CaptureSession → VideoSink
+    captureSession->setCamera(camera);
+    captureSession->setVideoSink(videoSink);
+
+    // Nhận frame từ VideoSink
+    connect(videoSink, &QVideoSink::videoFrameChanged,
+            this, [this](const QVideoFrame& frame)
+    {
+        QVideoFrame f = frame;  // Cần bản copy non-const
+
+        if (f.isValid())
+        {
+            latestFrame = f.toImage();
+        }
+    });
+
+    // Bắt đầu camera
+    camera->start();
+    cameraInitialized = true;
+
+    qDebug() << "Camera initialized:"
+             << cameras.first().description();
+}
+
+
+//---------------------------------------------------
+// Chụp webcam 1 lần, trả về base64 JPEG
 //---------------------------------------------------
 
 QString WebcamModule::captureWebcam()
 {
-    // Sử dụng cách portable: chụp qua ffmpeg hoặc
-    // trả về placeholder nếu không có webcam library
+    initCamera();
 
-#ifdef Q_OS_WIN
-    // Bước 1: Tìm tên webcam device qua ffmpeg
-    QProcess listProcess;
-    listProcess.start("ffmpeg",
-                      QStringList() << "-list_devices" << "true"
-                                    << "-f" << "dshow"
-                                    << "-i" << "dummy");
-    listProcess.waitForFinished(5000);
-
-    // ffmpeg output device list vào stderr
-    QString deviceOutput = listProcess.readAllStandardError();
-    QString deviceName;
-
-    // Tìm dòng chứa "video" device
-    QStringList lines = deviceOutput.split("\n");
-    for (const QString& line : lines)
+    // Nếu camera chưa có frame, đợi tối đa 3 giây
+    if (latestFrame.isNull())
     {
-        // Format: [dshow @ ...] "Device Name" (video)
-        if (line.contains("(video)"))
+        QElapsedTimer timer;
+        timer.start();
+
+        while (latestFrame.isNull() && timer.elapsed() < 3000)
         {
-            int firstQuote = line.indexOf('"');
-            int lastQuote = line.indexOf('"', firstQuote + 1);
-            if (firstQuote >= 0 && lastQuote > firstQuote)
-            {
-                deviceName = line.mid(firstQuote + 1,
-                                      lastQuote - firstQuote - 1);
-                break;
-            }
+            QCoreApplication::processEvents(
+                QEventLoop::AllEvents, 100);
         }
     }
 
-    if (!deviceName.isEmpty())
+    if (!latestFrame.isNull())
     {
-        QProcess process;
-        QString tempFile = QDir::tempPath() + "/webcam_capture.jpg";
-
-        // Dùng ffmpeg capture 1 frame với tên device chính xác
-        process.start("ffmpeg",
-                      QStringList() << "-y"
-                                    << "-f" << "dshow"
-                                    << "-i" << ("video=" + deviceName)
-                                    << "-frames:v" << "1"
-                                    << tempFile);
-        process.waitForFinished(10000);
-
-        QFile file(tempFile);
-        if (file.exists() && file.open(QIODevice::ReadOnly))
-        {
-            QByteArray data = file.readAll();
-            file.close();
-            file.remove();
-
-            qDebug() << "Webcam captured via ffmpeg, device:" << deviceName;
-            return data.toBase64();
-        }
+        qDebug() << "Webcam captured, size:"
+                 << latestFrame.size();
+        return imageToBase64(latestFrame);
     }
-    else
-    {
-        qDebug() << "No webcam device found!";
-    }
-#endif
 
-    // Fallback: tạo ảnh placeholder
-    QImage placeholderImg(320, 240, QImage::Format_RGB888);
-    placeholderImg.fill(Qt::darkGray);
+    // Fallback: ảnh placeholder nếu không có camera
+    qDebug() << "Webcam capture failed - returning placeholder";
 
-    // Vẽ text "No Webcam"
-    QByteArray byteArray;
-    QBuffer buffer(&byteArray);
-    buffer.open(QIODevice::WriteOnly);
-    placeholderImg.save(&buffer, "JPEG", 80);
-
-    qDebug() << "Webcam capture (placeholder)";
-    return byteArray.toBase64();
+    QImage placeholder(320, 240, QImage::Format_RGB888);
+    placeholder.fill(Qt::darkGray);
+    return imageToBase64(placeholder);
 }
 
 
@@ -133,10 +144,13 @@ void WebcamModule::startStream()
         return;
     }
 
+    initCamera();
+
     streaming = true;
     streamTimer->start(Constants::WEBCAM_REFRESH_RATE);
 
-    qDebug() << "Webcam stream started.";
+    qDebug() << "Webcam stream started, interval:"
+             << Constants::WEBCAM_REFRESH_RATE << "ms";
 }
 
 
@@ -165,4 +179,21 @@ void WebcamModule::stopStream()
 bool WebcamModule::isStreamActive() const
 {
     return streaming;
+}
+
+
+//---------------------------------------------------
+// Chuyển QImage → base64 JPEG string
+//---------------------------------------------------
+
+QString WebcamModule::imageToBase64(const QImage& image)
+{
+    QByteArray byteArray;
+    QBuffer buffer(&byteArray);
+    buffer.open(QIODevice::WriteOnly);
+
+    // JPEG quality 50 để giảm dung lượng truyền qua mạng
+    image.save(&buffer, "JPEG", 50);
+
+    return byteArray.toBase64();
 }

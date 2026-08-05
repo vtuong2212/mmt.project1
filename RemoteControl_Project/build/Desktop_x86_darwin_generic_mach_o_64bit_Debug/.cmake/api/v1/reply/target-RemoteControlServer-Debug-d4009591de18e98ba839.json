@@ -209,6 +209,10 @@
 				{
 					"backtrace" : 24,
 					"define" : "QT_QML_DEBUG"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_WIDGETS_LIB"
 				}
 			],
 			"frameworks" : 
@@ -227,6 +231,11 @@
 					"backtrace" : 2,
 					"isSystem" : true,
 					"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtWidgets.framework"
 				}
 			],
 			"includes" : 
@@ -267,6 +276,11 @@
 					"backtrace" : 2,
 					"isSystem" : true,
 					"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtWidgets.framework/Headers"
 				}
 			],
 			"language" : "CXX",
@@ -329,6 +343,11 @@
 			{
 				"backtrace" : 2,
 				"fragment" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Versions/A/QtNetwork",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtWidgets.framework/Versions/A/QtWidgets",
 				"role" : "libraries"
 			},
 			{

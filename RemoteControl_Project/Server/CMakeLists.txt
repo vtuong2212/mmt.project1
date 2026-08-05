@@ -40,12 +40,13 @@ target_include_directories(RemoteControlServer PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/../Common
 )
 
-# Link Qt libraries (Gui cần cho QGuiApplication + Screenshot)
+# Link Qt libraries (Gui cho Screenshot, Multimedia cho Webcam)
 target_link_libraries(RemoteControlServer PRIVATE
     Qt6::Core
     Qt6::Network
     Qt6::Gui
     Qt6::Widgets
+    Qt6::Multimedia
 )
 
 #============================================
