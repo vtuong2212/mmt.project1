@@ -1006,5 +1006,4 @@ Server/CMakeFiles/RemoteControlServer.dir/Modules/ApplicationModule.cpp.o: \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qfileinfo.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qtimezone.h \
   /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/QFileInfo \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/QDirIterator \
-  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/qdiriterator.h
+  /Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers/QSet
