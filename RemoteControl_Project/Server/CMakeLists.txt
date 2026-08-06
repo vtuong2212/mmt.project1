@@ -48,6 +48,13 @@ if(APPLE)
         MACOSX_BUNDLE_BUNDLE_VERSION "1.0"
         MACOSX_BUNDLE_SHORT_VERSION_STRING "1.0"
     )
+
+    # Automatically ad-hoc sign the entire app bundle after build
+    # The linker only signs the binary which leaves Info.plist unbound
+    add_custom_command(TARGET RemoteControlServer POST_BUILD
+        COMMAND codesign --force --deep --sign - "$<TARGET_BUNDLE_DIR:RemoteControlServer>"
+        COMMENT "Signing the macOS app bundle..."
+    )
 endif()
 
 # Include thư mục Common

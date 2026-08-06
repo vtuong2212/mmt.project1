@@ -1,0 +1,4 @@
+set(__QT_DEPLOY_TARGET_RemoteControlServer_FILE /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer)
+set(__QT_DEPLOY_TARGET_RemoteControlServer_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_RemoteControlClient_FILE /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Client/RemoteControlClient)
+set(__QT_DEPLOY_TARGET_RemoteControlClient_TYPE EXECUTABLE)

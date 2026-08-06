@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/cmake_install.cmake",
+		"/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/cmake_install.cmake",
+		"/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Client/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
