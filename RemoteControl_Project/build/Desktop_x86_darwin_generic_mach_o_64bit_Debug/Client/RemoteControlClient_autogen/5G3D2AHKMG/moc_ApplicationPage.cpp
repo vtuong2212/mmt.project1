@@ -43,7 +43,7 @@ template <> constexpr inline auto ApplicationPage::qt_create_metaobjectdata<qt_m
         "onListClicked",
         "",
         "onOpenClicked",
-        "onCloseClicked"
+        "onCloseSelectedClicked"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -51,7 +51,7 @@ template <> constexpr inline auto ApplicationPage::qt_create_metaobjectdata<qt_m
         QtMocHelpers::SlotData<void()>(1, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'onOpenClicked'
         QtMocHelpers::SlotData<void()>(3, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onCloseClicked'
+        // Slot 'onCloseSelectedClicked'
         QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
@@ -78,7 +78,7 @@ void ApplicationPage::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
         switch (_id) {
         case 0: _t->onListClicked(); break;
         case 1: _t->onOpenClicked(); break;
-        case 2: _t->onCloseClicked(); break;
+        case 2: _t->onCloseSelectedClicked(); break;
         default: ;
         }
     }

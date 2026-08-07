@@ -105,11 +105,25 @@ void ApplicationPage::onOpenClicked()
 {
     if (!clientSocket) return;
 
-    QString path = inputPath->text().trimmed();
+    QString path;
+
+    // Ưu tiên lấy từ dòng đang chọn trong bảng
+    int row = tableWidget->currentRow();
+    if (row >= 0)
+    {
+        path = tableWidget->item(row, 1)->text();  // Install Location
+    }
+
+    // Nếu chưa chọn dòng nào, lấy từ ô input
+    if (path.isEmpty())
+    {
+        path = inputPath->text().trimmed();
+    }
+
     if (path.isEmpty())
     {
         QMessageBox::warning(this, "Warning",
-                             "Please enter application path!");
+                             "Please select an application or enter a path!");
         return;
     }
 
