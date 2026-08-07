@@ -7,6 +7,7 @@
 #include <QCoreApplication>
 #include <QElapsedTimer>
 #include <QPermission>
+#include <QEventLoop>
 
 WebcamModule::WebcamModule(QObject *parent)
     : QObject(parent),
@@ -181,26 +182,29 @@ QString WebcamModule::captureWebcam()
     if (!permissionGranted)
     {
         bool granted = false;
+        bool done = false;
+        QEventLoop loop;
 
-        requestCameraPermission([&granted](bool result)
+        requestCameraPermission([&granted, &done, &loop](bool result)
         {
             granted = result;
+            done = true;
+            if (loop.isRunning())
+            {
+                loop.quit();
+            }
         });
 
-        // Đợi permission dialog (processEvents cho đến khi có kết quả)
-        QElapsedTimer permTimer;
-        permTimer.start();
-        while (!permissionGranted && !granted && permTimer.elapsed() < 5000)
+        // Đợi permission dialog (bằng loop cục bộ)
+        if (!done)
         {
-            QCoreApplication::processEvents(QEventLoop::AllEvents, 100);
+            loop.exec();
         }
 
-        if (!permissionGranted)
+        if (!permissionGranted && !granted)
         {
-            qDebug() << "Camera permission not granted - returning placeholder";
-            QImage placeholder(320, 240, QImage::Format_RGB888);
-            placeholder.fill(Qt::darkGray);
-            return imageToBase64(placeholder);
+            qDebug() << "Camera permission not granted - returning error";
+            return "ERROR: Camera permission denied. Please enable camera access for RemoteControlServer in System Settings.";
         }
     }
 
@@ -239,16 +243,20 @@ QString WebcamModule::captureWebcam()
 // Bắt đầu stream webcam
 //---------------------------------------------------
 
-void WebcamModule::startStream()
+QString WebcamModule::startStream()
 {
     if (streaming)
     {
         qDebug() << "Webcam stream already active!";
-        return;
+        return "SUCCESS";
     }
 
+    QString result = "SUCCESS";
+    bool done = false;
+    QEventLoop loop;
+
     // Xin quyền trước khi start stream
-    requestCameraPermission([this](bool granted)
+    requestCameraPermission([this, &result, &done, &loop](bool granted)
     {
         if (granted)
         {
@@ -263,8 +271,22 @@ void WebcamModule::startStream()
         else
         {
             qDebug() << "Cannot start webcam stream - permission denied";
+            result = "ERROR: Camera permission denied. Please enable camera access for RemoteControlServer in System Settings.";
+        }
+        
+        done = true;
+        if (loop.isRunning())
+        {
+            loop.quit();
         }
     });
+
+    if (!done)
+    {
+        loop.exec();
+    }
+
+    return result;
 }
 
 

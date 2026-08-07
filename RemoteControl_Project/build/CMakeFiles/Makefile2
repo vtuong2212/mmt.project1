@@ -128,8 +128,8 @@ Server/clean: Server/CMakeFiles/RemoteControlServer_autogen.dir/clean
 # Target rules for target Server/CMakeFiles/RemoteControlServer.dir
 
 # All Build rule for target.
-Server/CMakeFiles/RemoteControlServer.dir/all: Server/CMakeFiles/RemoteControlServer_autogen_timestamp_deps.dir/all
 Server/CMakeFiles/RemoteControlServer.dir/all: Server/CMakeFiles/RemoteControlServer_autogen.dir/all
+Server/CMakeFiles/RemoteControlServer.dir/all: Server/CMakeFiles/RemoteControlServer_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f Server/CMakeFiles/RemoteControlServer.dir/build.make Server/CMakeFiles/RemoteControlServer.dir/depend
 	$(MAKE) $(MAKESILENT) -f Server/CMakeFiles/RemoteControlServer.dir/build.make Server/CMakeFiles/RemoteControlServer.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/CMakeFiles --progress-num=15,16,17,18,19,20,21,22,23,24,25,26,27 "Built target RemoteControlServer"
@@ -225,8 +225,8 @@ Server/CMakeFiles/RemoteControlServer_autogen.dir/clean:
 # Target rules for target Client/CMakeFiles/RemoteControlClient.dir
 
 # All Build rule for target.
-Client/CMakeFiles/RemoteControlClient.dir/all: Client/CMakeFiles/RemoteControlClient_autogen_timestamp_deps.dir/all
 Client/CMakeFiles/RemoteControlClient.dir/all: Client/CMakeFiles/RemoteControlClient_autogen.dir/all
+Client/CMakeFiles/RemoteControlClient.dir/all: Client/CMakeFiles/RemoteControlClient_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f Client/CMakeFiles/RemoteControlClient.dir/build.make Client/CMakeFiles/RemoteControlClient.dir/depend
 	$(MAKE) $(MAKESILENT) -f Client/CMakeFiles/RemoteControlClient.dir/build.make Client/CMakeFiles/RemoteControlClient.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target RemoteControlClient"
@@ -244,8 +244,8 @@ RemoteControlClient: Client/CMakeFiles/RemoteControlClient.dir/rule
 .PHONY : RemoteControlClient
 
 # codegen rule for target.
-Client/CMakeFiles/RemoteControlClient.dir/codegen: Client/CMakeFiles/RemoteControlClient_autogen_timestamp_deps.dir/all
 Client/CMakeFiles/RemoteControlClient.dir/codegen: Client/CMakeFiles/RemoteControlClient_autogen.dir/all
+Client/CMakeFiles/RemoteControlClient.dir/codegen: Client/CMakeFiles/RemoteControlClient_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f Client/CMakeFiles/RemoteControlClient.dir/build.make Client/CMakeFiles/RemoteControlClient.dir/codegen
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Finished codegen for target RemoteControlClient"
 .PHONY : Client/CMakeFiles/RemoteControlClient.dir/codegen

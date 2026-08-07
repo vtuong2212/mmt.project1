@@ -173,14 +173,25 @@ void WebcamPage::handleResponse(const Packet& packet)
 
     if (command == Protocol::CAPTURE_WEBCAM)
     {
-        displayImage(data);
-        statusLabel->setText("Webcam image received!");
+        if (data.startsWith("ERROR:"))
+        {
+            statusLabel->setText(data);
+        }
+        else
+        {
+            displayImage(data);
+            statusLabel->setText("Webcam image received!");
+        }
     }
     else if (command == Protocol::START_WEBCAM_STREAM)
     {
         if (data == "SUCCESS")
         {
             statusLabel->setText("Webcam stream started!");
+        }
+        else if (data.startsWith("ERROR:"))
+        {
+            statusLabel->setText(data);
         }
         else
         {

@@ -24,7 +24,7 @@ public:
     QString captureWebcam();
 
     // Bắt đầu stream webcam
-    void startStream();
+    QString startStream();
 
     // Dừng stream webcam
     void stopStream();

@@ -180,8 +180,8 @@ void CommandManager::handleCommand(const Packet& packet)
     }
     else if (command == Protocol::START_WEBCAM_STREAM)
     {
-        webcamModule->startStream();
-        response.setData("SUCCESS");
+        QString result = webcamModule->startStream();
+        response.setData(result);
     }
     else if (command == Protocol::STOP_WEBCAM_STREAM)
     {

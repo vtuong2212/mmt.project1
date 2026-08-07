@@ -1011,4 +1011,5 @@ Server/CMakeFiles/RemoteControlServer.dir/Modules/WebcamModule.cpp.o: \
   /opt/homebrew/lib/QtCore.framework/Headers/qelapsedtimer.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QPermission \
   /opt/homebrew/lib/QtCore.framework/Headers/qpermissions.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/qvariant.h
+  /opt/homebrew/lib/QtCore.framework/Headers/qvariant.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QEventLoop
