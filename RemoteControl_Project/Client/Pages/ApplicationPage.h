@@ -30,7 +30,7 @@ public:
 private slots:
     void onListClicked();
     void onOpenClicked();
-    void onCloseClicked();
+    void onCloseSelectedClicked();
 
 private:
     void setupUI();

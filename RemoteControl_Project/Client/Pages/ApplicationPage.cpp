@@ -29,7 +29,7 @@ void ApplicationPage::setupUI()
 
     btnList = new QPushButton("List Applications");
     btnOpen = new QPushButton("Open Application");
-    btnClose = new QPushButton("Close Application");
+    btnClose = new QPushButton("Close Selected Application");
 
     btnList->setMinimumHeight(35);
     btnOpen->setMinimumHeight(35);
@@ -41,11 +41,11 @@ void ApplicationPage::setupUI()
 
     mainLayout->addLayout(buttonLayout);
 
-    // Input path
+    // Input path (chỉ dùng cho Open Application)
     QHBoxLayout* inputLayout = new QHBoxLayout();
-    QLabel* pathLabel = new QLabel("App Path/Name:");
+    QLabel* pathLabel = new QLabel("App Path:");
     inputPath = new QLineEdit();
-    inputPath->setPlaceholderText("Enter application path to open or process name to close...");
+    inputPath->setPlaceholderText("Enter application path to open...");
 
     inputLayout->addWidget(pathLabel);
     inputLayout->addWidget(inputPath);
@@ -74,7 +74,7 @@ void ApplicationPage::setupUI()
     connect(btnOpen, &QPushButton::clicked,
             this, &ApplicationPage::onOpenClicked);
     connect(btnClose, &QPushButton::clicked,
-            this, &ApplicationPage::onCloseClicked);
+            this, &ApplicationPage::onCloseSelectedClicked);
 }
 
 
@@ -118,27 +118,19 @@ void ApplicationPage::onOpenClicked()
     clientSocket->sendPacket(packet);
 }
 
-void ApplicationPage::onCloseClicked()
+void ApplicationPage::onCloseSelectedClicked()
 {
     if (!clientSocket) return;
 
-    QString name = inputPath->text().trimmed();
-    if (name.isEmpty())
-    {
-        // Thử lấy từ dòng đang chọn
-        int row = tableWidget->currentRow();
-        if (row >= 0)
-        {
-            name = tableWidget->item(row, 0)->text();
-        }
-    }
-
-    if (name.isEmpty())
+    int row = tableWidget->currentRow();
+    if (row < 0)
     {
         QMessageBox::warning(this, "Warning",
-                             "Please enter or select application name!");
+                             "Please select an application first.");
         return;
     }
+
+    QString name = tableWidget->item(row, 0)->text();
 
     statusLabel->setText("Closing: " + name);
     Packet packet(Protocol::CLOSE_APPLICATION, name);
