@@ -5193,6 +5193,9 @@
  mdp:/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qversiontagging.h
  mdp:/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qxptype_traits.h
  mdp:/opt/homebrew/Cellar/qtbase/6.11.1/lib/QtCore.framework/Versions/A/Headers/qyieldcpu.h
+/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Server/Command/CommandManager.cpp
+/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Server/Modules/WebcamModule.cpp
+/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Server/Modules/FileModule.cpp
 /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Server/Modules/WebcamModule.h
  mmc:Q_OBJECT
  mdp:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h
@@ -6097,9 +6100,6 @@
  mdp:/opt/homebrew/Cellar/qtmultimedia/6.11.1/lib/QtMultimedia.framework/Versions/A/Headers/qvideoframe.h
  mdp:/opt/homebrew/Cellar/qtmultimedia/6.11.1/lib/QtMultimedia.framework/Versions/A/Headers/qvideoframeformat.h
  mdp:/opt/homebrew/Cellar/qtmultimedia/6.11.1/lib/QtMultimedia.framework/Versions/A/Headers/qvideosink.h
-/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Server/Modules/WebcamModule.cpp
-/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Server/Modules/FileModule.cpp
-/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Server/Command/CommandManager.cpp
 /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Server/Modules/KeyloggerModule.h
  mmc:Q_OBJECT
  mdp:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h

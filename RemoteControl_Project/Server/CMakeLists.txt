@@ -49,12 +49,21 @@ if(APPLE)
         MACOSX_BUNDLE_SHORT_VERSION_STRING "1.0"
     )
 
-    # Automatically ad-hoc sign the entire app bundle after build
-    # The linker only signs the binary which leaves Info.plist unbound
-    add_custom_command(TARGET RemoteControlServer POST_BUILD
-        COMMAND codesign --force --deep --sign - "$<TARGET_BUNDLE_DIR:RemoteControlServer>"
-        COMMENT "Signing the macOS app bundle..."
-    )
+    # Find macdeployqt to bundle Qt frameworks and plugins
+    find_program(MACDEPLOYQT_EXECUTABLE macdeployqt HINTS "/opt/homebrew/bin" "/usr/local/bin")
+    
+    if(MACDEPLOYQT_EXECUTABLE)
+        add_custom_command(TARGET RemoteControlServer POST_BUILD
+            COMMAND ${MACDEPLOYQT_EXECUTABLE} "$<TARGET_BUNDLE_DIR:RemoteControlServer>" -always-overwrite
+            COMMAND codesign --force --deep --sign - "$<TARGET_BUNDLE_DIR:RemoteControlServer>"
+            COMMENT "Deploying Qt with macdeployqt and signing the macOS app bundle..."
+        )
+    else()
+        add_custom_command(TARGET RemoteControlServer POST_BUILD
+            COMMAND codesign --force --deep --sign - "$<TARGET_BUNDLE_DIR:RemoteControlServer>"
+            COMMENT "Signing the macOS app bundle..."
+        )
+    endif()
 endif()
 
 # Include thư mục Common
@@ -94,5 +103,6 @@ if(APPLE)
     target_link_libraries(RemoteControlServer PRIVATE
         "-framework ApplicationServices"
         "-framework CoreFoundation"
+        Qt6::QDarwinCameraPermissionPlugin
     )
 endif()
