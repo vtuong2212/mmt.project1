@@ -774,6 +774,7 @@ RemoteControlServer_autogen/timestamp: \
 	/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Server/CMakeLists.txt \
 	/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Server/Command/CommandManager.cpp \
 	/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Server/Command/CommandManager.h \
+	/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Server/Info.plist \
 	/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Server/Modules/ApplicationModule.cpp \
 	/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Server/Modules/ApplicationModule.h \
 	/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Server/Modules/FileModule.cpp \

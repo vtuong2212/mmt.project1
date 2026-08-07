@@ -1,0 +1,466 @@
+qt.core.plugin.factoryloader: checking directory path "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/PlugIns/platforms" ...
+qt.core.plugin.factoryloader: looking at "libqcocoa.dylib"
+qt.core.plugin.loader: Found metadata in lib /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/PlugIns/platforms/libqcocoa.dylib, metadata=
+{
+    "IID": "org.qt-project.Qt.QPA.QPlatformIntegrationFactoryInterface.5.3",
+    "MetaData": {
+        "Keys": [
+            "cocoa"
+        ]
+    },
+    "archlevel": 0,
+    "className": "QCocoaIntegrationPlugin",
+    "debug": false,
+    "version": 396032
+}
+
+
+qt.core.plugin.factoryloader: Got keys from plugin meta data QList("cocoa")
+qt.core.plugin.factoryloader: checking directory path "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/MacOS/platforms" ...
+qt.core.library: "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/PlugIns/platforms/libqcocoa.dylib" loaded library
+qt.core.plugin.factoryloader: checking directory path "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/PlugIns/platformthemes" ...
+qt.core.plugin.factoryloader: checking directory path "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/MacOS/platformthemes" ...
+========================================
+ Remote Control Server
+========================================
+Server is running on port: 8080
+Server started successfully!
+Waiting for Client connection...
+Client connected from: "::ffff:127.0.0.1" : 50183
+>>> Client has connected!
+Received packet: "START_WEBCAM_STREAM"
+=== Handling command: "START_WEBCAM_STREAM" | Data: ""
+qt.core.plugin.factoryloader: checking directory path "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/PlugIns/permissions" ...
+qt.core.plugin.factoryloader: checking directory path "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/MacOS/permissions" ...
+Camera permission: UNDETERMINED - requesting...
+Camera permission: GRANTED by user
+qt.core.plugin.factoryloader: checking directory path "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/PlugIns/multimedia" ...
+qt.core.plugin.factoryloader: looking at "libdarwinmediaplugin.dylib"
+qt.core.plugin.loader: Found metadata in lib /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/PlugIns/multimedia/libdarwinmediaplugin.dylib, metadata=
+{
+    "IID": "org.qt-project.Qt.QPlatformMediaPlugin",
+    "MetaData": {
+        "Keys": [
+            "darwin"
+        ]
+    },
+    "archlevel": 0,
+    "className": "QDarwinMediaPlugin",
+    "debug": false,
+    "version": 396032
+}
+
+
+qt.core.plugin.factoryloader: Got keys from plugin meta data QList("darwin")
+qt.core.plugin.factoryloader: checking directory path "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/MacOS/multimedia" ...
+qt.core.library: "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/PlugIns/multimedia/libdarwinmediaplugin.dylib" loaded library
+Found 1 camera(s):
+  - "Camera FaceTime HD"
+Camera initialized: "Camera FaceTime HD"
+Webcam stream started, interval: 500 ms
+Client disconnected!
+>>> Client has disconnected!
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+qt.core.plugin.factoryloader: checking directory path "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/PlugIns/imageformats" ...
+qt.core.plugin.factoryloader: looking at "libqgif.dylib"
+qt.core.plugin.loader: Found metadata in lib /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/PlugIns/imageformats/libqgif.dylib, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "gif"
+        ],
+        "MimeTypes": [
+            "image/gif"
+        ]
+    },
+    "archlevel": 0,
+    "className": "QGifPlugin",
+    "debug": false,
+    "version": 396032
+}
+
+
+qt.core.plugin.factoryloader: Got keys from plugin meta data QList("gif")
+qt.core.plugin.factoryloader: looking at "libqwbmp.dylib"
+qt.core.plugin.loader: Found metadata in lib /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/PlugIns/imageformats/libqwbmp.dylib, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "wbmp"
+        ],
+        "MimeTypes": [
+            "image/vnd.wap.wbmp"
+        ]
+    },
+    "archlevel": 0,
+    "className": "QWbmpPlugin",
+    "debug": false,
+    "version": 396032
+}
+
+
+qt.core.plugin.factoryloader: Got keys from plugin meta data QList("wbmp")
+qt.core.plugin.factoryloader: looking at "libqwebp.dylib"
+qt.core.plugin.loader: Found metadata in lib /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/PlugIns/imageformats/libqwebp.dylib, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "webp"
+        ],
+        "MimeTypes": [
+            "image/webp"
+        ]
+    },
+    "archlevel": 0,
+    "className": "QWebpPlugin",
+    "debug": false,
+    "version": 396032
+}
+
+
+qt.core.plugin.factoryloader: Got keys from plugin meta data QList("webp")
+qt.core.plugin.factoryloader: looking at "libqico.dylib"
+qt.core.plugin.loader: Found metadata in lib /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/PlugIns/imageformats/libqico.dylib, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "ico",
+            "cur"
+        ],
+        "MimeTypes": [
+            "image/vnd.microsoft.icon",
+            "image/vnd.microsoft.icon"
+        ]
+    },
+    "archlevel": 0,
+    "className": "QICOPlugin",
+    "debug": false,
+    "version": 396032
+}
+
+
+qt.core.plugin.factoryloader: Got keys from plugin meta data QList("ico", "cur")
+qt.core.plugin.factoryloader: looking at "libqmacheif.dylib"
+qt.core.plugin.loader: Found metadata in lib /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/PlugIns/imageformats/libqmacheif.dylib, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "heic",
+            "heif"
+        ],
+        "MimeTypes": [
+            "image/heic",
+            "image/heif"
+        ]
+    },
+    "archlevel": 0,
+    "className": "QMacHeifPlugin",
+    "debug": false,
+    "version": 396032
+}
+
+
+qt.core.plugin.factoryloader: Got keys from plugin meta data QList("heic", "heif")
+qt.core.plugin.factoryloader: looking at "libqjpeg.dylib"
+qt.core.plugin.loader: Found metadata in lib /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/PlugIns/imageformats/libqjpeg.dylib, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "jpg",
+            "jpeg",
+            "jfif"
+        ],
+        "MimeTypes": [
+            "image/jpeg",
+            "image/jpeg",
+            "image/jpeg"
+        ]
+    },
+    "archlevel": 0,
+    "className": "QJpegPlugin",
+    "debug": false,
+    "version": 396032
+}
+
+
+qt.core.plugin.factoryloader: Got keys from plugin meta data QList("jpg", "jpeg", "jfif")
+qt.core.plugin.factoryloader: looking at "libqtiff.dylib"
+qt.core.plugin.loader: Found metadata in lib /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/PlugIns/imageformats/libqtiff.dylib, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "tiff",
+            "tif"
+        ],
+        "MimeTypes": [
+            "image/tiff",
+            "image/tiff"
+        ]
+    },
+    "archlevel": 0,
+    "className": "QTiffPlugin",
+    "debug": false,
+    "version": 396032
+}
+
+
+qt.core.plugin.factoryloader: Got keys from plugin meta data QList("tiff", "tif")
+qt.core.plugin.factoryloader: looking at "libqmng.dylib"
+qt.core.plugin.loader: Found metadata in lib /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/PlugIns/imageformats/libqmng.dylib, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "mng"
+        ],
+        "MimeTypes": [
+            "video/x-mng"
+        ]
+    },
+    "archlevel": 0,
+    "className": "QMngPlugin",
+    "debug": false,
+    "version": 396032
+}
+
+
+qt.core.plugin.factoryloader: Got keys from plugin meta data QList("mng")
+qt.core.plugin.factoryloader: looking at "libqjp2.dylib"
+qt.core.plugin.loader: Found metadata in lib /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/PlugIns/imageformats/libqjp2.dylib, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "jp2"
+        ],
+        "MimeTypes": [
+            "image/jp2",
+            "image/jpx",
+            "image/jpm",
+            "video/mj2"
+        ]
+    },
+    "archlevel": 0,
+    "className": "QJp2Plugin",
+    "debug": false,
+    "version": 396032
+}
+
+
+qt.core.plugin.factoryloader: Got keys from plugin meta data QList("jp2")
+qt.core.plugin.factoryloader: looking at "libqpdf.dylib"
+qt.core.plugin.loader: Found metadata in lib /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/PlugIns/imageformats/libqpdf.dylib, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "pdf"
+        ],
+        "MimeTypes": [
+            "application/pdf"
+        ]
+    },
+    "archlevel": 0,
+    "className": "QPdfPlugin",
+    "debug": false,
+    "version": 396032
+}
+
+
+qt.core.plugin.factoryloader: Got keys from plugin meta data QList("pdf")
+qt.core.plugin.factoryloader: looking at "libqicns.dylib"
+qt.core.plugin.loader: Found metadata in lib /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/PlugIns/imageformats/libqicns.dylib, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "icns"
+        ],
+        "MimeTypes": [
+            "image/x-icns"
+        ]
+    },
+    "archlevel": 0,
+    "className": "QICNSPlugin",
+    "debug": false,
+    "version": 396032
+}
+
+
+qt.core.plugin.factoryloader: Got keys from plugin meta data QList("icns")
+qt.core.plugin.factoryloader: looking at "libqtga.dylib"
+qt.core.plugin.loader: Found metadata in lib /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/PlugIns/imageformats/libqtga.dylib, metadata=
+{
+    "IID": "org.qt-project.Qt.QImageIOHandlerFactoryInterface",
+    "MetaData": {
+        "Keys": [
+            "tga"
+        ],
+        "MimeTypes": [
+            "image/x-tga"
+        ]
+    },
+    "archlevel": 0,
+    "className": "QTgaPlugin",
+    "debug": false,
+    "version": 396032
+}
+
+
+qt.core.plugin.factoryloader: Got keys from plugin meta data QList("tga")
+qt.core.plugin.factoryloader: checking directory path "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/MacOS/imageformats" ...
+qt.core.library: "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/PlugIns/imageformats/libqgif.dylib" loaded library
+qt.core.library: "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/PlugIns/imageformats/libqwbmp.dylib" loaded library
+qt.core.library: "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/PlugIns/imageformats/libqwebp.dylib" loaded library
+qt.core.library: "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/PlugIns/imageformats/libqico.dylib" loaded library
+qt.core.library: "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/PlugIns/imageformats/libqmacheif.dylib" loaded library
+qt.core.library: "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Server/RemoteControlServer.app/Contents/PlugIns/imageformats/libqjpeg.dylib" loaded library
+No Client connected!
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+No Client connected!
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+No Client connected!
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+No Client connected!
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+No Client connected!
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+No Client connected!
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+No Client connected!
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+No Client connected!
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+No Client connected!
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?
+No Client connected!
+cannot create texture, Metal texture cache was released?
+cannot create texture, Metal texture cache was released?

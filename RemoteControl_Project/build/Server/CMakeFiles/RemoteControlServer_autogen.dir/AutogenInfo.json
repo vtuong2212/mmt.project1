@@ -6,7 +6,8 @@
 	"CMAKE_EXECUTABLE" : "/opt/homebrew/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Server/CMakeLists.txt"
+		"/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Server/CMakeLists.txt",
+		"/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Server/Info.plist"
 	],
 	"CMAKE_SOURCE_DIR" : "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project",
 	"CROSS_CONFIG" : false,

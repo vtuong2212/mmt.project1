@@ -971,6 +971,22 @@ Server/CMakeFiles/RemoteControlServer.dir/main.cpp.o: \
   /opt/homebrew/lib/QtCore.framework/Headers/qmargins.h \
   /opt/homebrew/lib/QtGui.framework/Headers/qguiapplication_platform.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QDebug \
+  /opt/homebrew/lib/QtCore.framework/Headers/QtPlugin \
+  /opt/homebrew/lib/QtCore.framework/Headers/qplugin.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qpointer.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qjsonobject.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qjsonvalue.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qcborvalue.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qcborcommon.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qdatetime.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qcalendar.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qregularexpression.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qurl.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/quuid.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qendian.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qjsondocument.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qjsonparseerror.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/q20algorithm.h \
   /Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Server/Network/ServerSocket.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QObject \
   /opt/homebrew/lib/QtNetwork.framework/Headers/QTcpServer \

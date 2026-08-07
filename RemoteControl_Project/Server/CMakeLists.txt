@@ -29,8 +29,8 @@ set(SERVER_HEADERS
     Modules/PowerModule.h
 )
 
-# Tạo executable
-add_executable(RemoteControlServer
+# Tạo executable với qt_add_executable (để CMake tự động import plugins)
+qt_add_executable(RemoteControlServer
     ${SERVER_SOURCES}
     ${SERVER_HEADERS}
 )

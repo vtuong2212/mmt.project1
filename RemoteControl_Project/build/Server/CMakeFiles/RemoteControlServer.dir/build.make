@@ -248,7 +248,9 @@ RemoteControlServer_OBJECTS = \
 "CMakeFiles/RemoteControlServer.dir/Modules/PowerModule.cpp.o"
 
 # External object files for target RemoteControlServer
-RemoteControlServer_EXTERNAL_OBJECTS =
+RemoteControlServer_EXTERNAL_OBJECTS = \
+"/opt/homebrew/share/qt/plugins/permissions/objects-Release/QDarwinCameraPermissionPlugin_init/QDarwinCameraPermissionPlugin_init.cpp.o" \
+"/opt/homebrew/share/qt/plugins/permissions/objects-Release/QDarwinMicrophonePermissionPlugin_init/QDarwinMicrophonePermissionPlugin_init.cpp.o"
 
 Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/RemoteControlServer_autogen/mocs_compilation.cpp.o
 Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/main.cpp.o
@@ -261,11 +263,13 @@ Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: Server/CMakeF
 Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/Modules/FileModule.cpp.o
 Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/Modules/WebcamModule.cpp.o
 Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/Modules/PowerModule.cpp.o
-Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/build.make
 Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: /opt/homebrew/share/qt/plugins/permissions/objects-Release/QDarwinCameraPermissionPlugin_init/QDarwinCameraPermissionPlugin_init.cpp.o
+Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: /opt/homebrew/share/qt/plugins/permissions/objects-Release/QDarwinMicrophonePermissionPlugin_init/QDarwinMicrophonePermissionPlugin_init.cpp.o
+Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: Server/CMakeFiles/RemoteControlServer.dir/build.make
 Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: /opt/homebrew/lib/QtWidgets.framework/Versions/A/QtWidgets
 Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: /opt/homebrew/lib/QtMultimedia.framework/Versions/A/QtMultimedia
 Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: /opt/homebrew/share/qt/plugins/permissions/libqdarwincamerapermission.a
+Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: /opt/homebrew/share/qt/plugins/permissions/libqdarwinmicrophonepermission.a
 Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: /opt/homebrew/lib/QtNetwork.framework/Versions/A/QtNetwork
 Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: /opt/homebrew/lib/QtGui.framework/Versions/A/QtGui
 Server/RemoteControlServer.app/Contents/MacOS/RemoteControlServer: /opt/homebrew/lib/QtCore.framework/Versions/A/QtCore

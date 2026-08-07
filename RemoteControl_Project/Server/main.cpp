@@ -1,5 +1,10 @@
 #include <QGuiApplication>
 #include <QDebug>
+#include <QtPlugin>
+
+#ifdef Q_OS_MAC
+Q_IMPORT_PLUGIN(QDarwinCameraPermissionPlugin)
+#endif
 
 #include "Network/ServerSocket.h"
 #include "Command/CommandManager.h"
