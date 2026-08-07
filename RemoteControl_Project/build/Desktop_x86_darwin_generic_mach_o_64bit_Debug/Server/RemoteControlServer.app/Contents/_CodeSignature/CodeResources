@@ -164,6 +164,15 @@
 			<key>requirement</key>
 			<string>cdhash H"828c68f6c2ab232711a54fd9a09dac6806d333c5" or cdhash H"ed94c8453e63aca8de27b25cc3e2e5deb4a827c1"</string>
 		</dict>
+		<key>PlugIns/imageformats/libqsvg.dylib</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			x7m3SfIgwmjpZQ34pfcYiacUwyU=
+			</data>
+			<key>requirement</key>
+			<string>cdhash H"c7b9b749f220c268e9650df8a5f71889a714c325" or cdhash H"3011b286f1724f3bdb3b341e47286925364929cf"</string>
+		</dict>
 		<key>PlugIns/multimedia/libdarwinmediaplugin.dylib</key>
 		<dict>
 			<key>cdhash</key>

