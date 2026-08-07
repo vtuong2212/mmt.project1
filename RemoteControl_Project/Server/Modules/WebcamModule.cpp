@@ -17,16 +17,21 @@ WebcamModule::WebcamModule(QObject *parent)
       streaming(false),
       cameraInitialized(false),
       permissionGranted(false),
-      pendingStream(false)
+      pendingStream(false),
+      newFrameAvailable(false)
 {
     streamTimer = new QTimer(this);
 
-    // Khi timer tick, gửi frame mới nhất cho client
+    // Khi timer tick, gửi frame mới nhất cho client (chỉ convert khi cần thiết)
     connect(streamTimer, &QTimer::timeout, this, [this]()
     {
-        if (!latestFrame.isNull())
+        if (newFrameAvailable && latestVideoFrame.isValid())
         {
-            emit frameCaptured(imageToBase64(latestFrame));
+            newFrameAvailable = false;
+            QImage img = latestVideoFrame.toImage();
+            if (!img.isNull()) {
+                emit frameCaptured(imageToBase64(img));
+            }
         }
     });
 }
@@ -144,16 +149,12 @@ void WebcamModule::initCamera()
     captureSession->setCamera(camera);
     captureSession->setVideoSink(videoSink);
 
-    // Nhận frame từ VideoSink
+    // Nhận frame từ VideoSink (chỉ lưu trữ QVideoFrame, không convert sang QImage ngay để tránh lag)
     connect(videoSink, &QVideoSink::videoFrameChanged,
             this, [this](const QVideoFrame& frame)
     {
-        QVideoFrame f = frame;  // Cần bản copy non-const
-
-        if (f.isValid())
-        {
-            latestFrame = f.toImage();
-        }
+        latestVideoFrame = frame;
+        newFrameAvailable = true;
     });
 
     // Log lỗi camera
@@ -211,23 +212,23 @@ QString WebcamModule::captureWebcam()
     initCamera();
 
     // Nếu camera chưa có frame, đợi tối đa 3 giây
-    if (latestFrame.isNull())
+    if (!latestVideoFrame.isValid())
     {
         QElapsedTimer timer;
         timer.start();
 
-        while (latestFrame.isNull() && timer.elapsed() < 3000)
+        while (!latestVideoFrame.isValid() && timer.elapsed() < 3000)
         {
             QCoreApplication::processEvents(
                 QEventLoop::AllEvents, 100);
         }
     }
 
-    if (!latestFrame.isNull())
+    if (latestVideoFrame.isValid())
     {
-        qDebug() << "Webcam captured, size:"
-                 << latestFrame.size();
-        return imageToBase64(latestFrame);
+        QImage img = latestVideoFrame.toImage();
+        qDebug() << "Webcam captured, size:" << img.size();
+        return imageToBase64(img);
     }
 
     // Fallback: ảnh placeholder nếu không có camera
@@ -324,12 +325,18 @@ bool WebcamModule::isStreamActive() const
 
 QString WebcamModule::imageToBase64(const QImage& image)
 {
+    // Giảm kích thước ảnh xuống 640px nếu quá lớn để giảm băng thông (cực kỳ quan trọng để stream mượt qua TCP)
+    QImage scaledImage = image;
+    if (image.width() > 640) {
+        scaledImage = image.scaledToWidth(640, Qt::FastTransformation);
+    }
+
     QByteArray byteArray;
     QBuffer buffer(&byteArray);
     buffer.open(QIODevice::WriteOnly);
 
     // JPEG quality 50 để giảm dung lượng truyền qua mạng
-    image.save(&buffer, "JPEG", 50);
+    scaledImage.save(&buffer, "JPEG", 50);
 
     return byteArray.toBase64();
 }

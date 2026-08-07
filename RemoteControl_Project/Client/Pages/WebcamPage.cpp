@@ -155,7 +155,7 @@ void WebcamPage::displayImage(const QString& base64Data)
         QPixmap scaled = pixmap.scaled(
             imageLabel->size(),
             Qt::KeepAspectRatio,
-            Qt::SmoothTransformation);
+            Qt::FastTransformation);
 
         imageLabel->setPixmap(scaled);
     }

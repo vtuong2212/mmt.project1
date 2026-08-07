@@ -74,14 +74,23 @@
 			<key>requirement</key>
 			<string>cdhash H"a106bd561498f83ae39c3a1c14b4e5c3d9f6f685"</string>
 		</dict>
+		<key>Frameworks/QtPdf.framework</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			saMVUrTTj543mOGdvtYFgpbqnjk=
+			</data>
+			<key>requirement</key>
+			<string>cdhash H"b1a31552b4d38f9e3798e19dbed6058296ea9e39"</string>
+		</dict>
 		<key>Frameworks/QtQml.framework</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			b/vHJ+y44euMy6fgnlemlMO/TQc=
+			H75DmKo81uCzVGZxwYPZez7iusw=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"6ffbc727ecb8e1eb8ccba7e09e57a694c3bf4d07"</string>
+			<string>cdhash H"1fbe4398aa3cd6e0b3546671c183d97b3ee2bacc"</string>
 		</dict>
 		<key>Frameworks/QtQmlMeta.framework</key>
 		<dict>
@@ -118,6 +127,33 @@
 			</data>
 			<key>requirement</key>
 			<string>cdhash H"9328a9e0981ea473cb92cf8904878daea4540dac"</string>
+		</dict>
+		<key>Frameworks/QtSvg.framework</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			9SSahbqdxl6m0u81X8aeUtiMDUY=
+			</data>
+			<key>requirement</key>
+			<string>cdhash H"f5249a85ba9dc65ea6d2ef355fc69e52d88c0d46"</string>
+		</dict>
+		<key>Frameworks/QtVirtualKeyboard.framework</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			cvCFuLoj96AOC9zlEXN1QHRDxzY=
+			</data>
+			<key>requirement</key>
+			<string>cdhash H"72f085b8ba23f7a00e0bdce5117375407443c736"</string>
+		</dict>
+		<key>Frameworks/QtVirtualKeyboardQml.framework</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			PrHHKVRomZC9U6WUM1NYQV/0+2s=
+			</data>
+			<key>requirement</key>
+			<string>cdhash H"3eb1c72954689990bd53a594335358415ff4fb6b"</string>
 		</dict>
 		<key>Frameworks/QtWidgets.framework</key>
 		<dict>
@@ -438,10 +474,10 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			4H4gfa6t6V/6sZgkTxVOZ4rkuw0=
+			jkaXY5WNxRpCDvy6Vwe0nMBec3I=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"e07e207daeade95ffab198244f154e678ae4bb0d"</string>
+			<string>cdhash H"8e469763958dc51a420efcba5707b49cc05e7372"</string>
 		</dict>
 		<key>PlugIns/imageformats/libqgif.dylib</key>
 		<dict>
@@ -510,10 +546,19 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			l3Yw52pmM5RXhgdXywi0e1iAETI=
+			EP4b7j+N6gPrOmOuLMw2HMp1SYI=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"977630e76a66339457860757cb08b47b58801132"</string>
+			<string>cdhash H"10fe1bee3f8dea03eb3a63ae2ccc361cca754982"</string>
+		</dict>
+		<key>PlugIns/imageformats/libqsvg.dylib</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			abGr3YFv+sMmQysG1mOk6XewPlc=
+			</data>
+			<key>requirement</key>
+			<string>cdhash H"69b1abdd816ffac326432b06d663a4e977b03e57"</string>
 		</dict>
 		<key>PlugIns/imageformats/libqtga.dylib</key>
 		<dict>
@@ -582,10 +627,10 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			pIznZwqCtOlWTH36+jFffErwPls=
+			+6odZNHc6Km9HbGeXG/mTH38z+k=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"a48ce7670a82b4e9564c7dfafa315f7c4af03e5b"</string>
+			<string>cdhash H"fbaa1d64d1dce8a9bd1db19e5c6fe64c7dfccfe9"</string>
 		</dict>
 		<key>PlugIns/platforms/libqcocoa.dylib</key>
 		<dict>

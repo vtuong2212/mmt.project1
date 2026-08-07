@@ -22,8 +22,8 @@ namespace Constants
     // Webcam Settings
     //=========================================
 
-    constexpr int WEBCAM_REFRESH_RATE = 500;
-    // Đơn vị: milliseconds (0.5 giây)
+    constexpr int WEBCAM_REFRESH_RATE = 66;
+    // Đơn vị: milliseconds (~15 FPS)
 
     //=========================================
     // File Transfer Settings

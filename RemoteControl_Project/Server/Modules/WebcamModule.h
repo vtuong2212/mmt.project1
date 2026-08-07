@@ -51,7 +51,8 @@ private:
     QVideoSink* videoSink;
     QTimer* streamTimer;
 
-    QImage latestFrame;         // Frame mới nhất từ camera
+    QVideoFrame latestVideoFrame; // Lưu trữ frame gốc thay vì QImage
+    bool newFrameAvailable;       // Cờ đánh dấu có frame mới
     bool streaming;
     bool cameraInitialized;
     bool permissionGranted;     // Đã được cấp quyền camera chưa
