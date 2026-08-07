@@ -27,9 +27,23 @@ QString PowerModule::shutdown()
     // shutdown /s /t 0 : tắt ngay lập tức
     QProcess::startDetached("shutdown", QStringList() << "/s" << "/t" << "0");
     return "SUCCESS";
+#elif defined(Q_OS_MACOS)
+    QProcess process;
+    process.start("osascript", QStringList() << "-e" << "tell application \"System Events\" to shut down");
+    process.waitForFinished();
+    if (process.exitCode() == 0) {
+        qDebug() << "macOS shutdown command executed successfully.";
+        return "SUCCESS";
+    } else {
+        qDebug() << "macOS shutdown failed:" << process.readAllStandardError();
+        return "FAILED";
+    }
 #else
-    QProcess::startDetached("shutdown", QStringList() << "-h" << "now");
-    return "SUCCESS";
+    QProcess process;
+    process.start("shutdown", QStringList() << "-h" << "now");
+    process.waitForFinished();
+    if (process.exitCode() == 0) return "SUCCESS";
+    return "FAILED";
 #endif
 }
 
@@ -45,9 +59,23 @@ QString PowerModule::restart()
 #ifdef Q_OS_WIN
     QProcess::startDetached("shutdown", QStringList() << "/r" << "/t" << "0");
     return "SUCCESS";
+#elif defined(Q_OS_MACOS)
+    QProcess process;
+    process.start("osascript", QStringList() << "-e" << "tell application \"System Events\" to restart");
+    process.waitForFinished();
+    if (process.exitCode() == 0) {
+        qDebug() << "macOS restart command executed successfully.";
+        return "SUCCESS";
+    } else {
+        qDebug() << "macOS restart failed:" << process.readAllStandardError();
+        return "FAILED";
+    }
 #else
-    QProcess::startDetached("shutdown", QStringList() << "-r" << "now");
-    return "SUCCESS";
+    QProcess process;
+    process.start("shutdown", QStringList() << "-r" << "now");
+    process.waitForFinished();
+    if (process.exitCode() == 0) return "SUCCESS";
+    return "FAILED";
 #endif
 }
 
@@ -64,9 +92,23 @@ QString PowerModule::sleep()
     // Dùng PowrProf API
     SetSuspendState(FALSE, FALSE, FALSE);
     return "SUCCESS";
+#elif defined(Q_OS_MACOS)
+    QProcess process;
+    process.start("pmset", QStringList() << "sleepnow");
+    process.waitForFinished();
+    if (process.exitCode() == 0) {
+        qDebug() << "macOS sleep command executed successfully.";
+        return "SUCCESS";
+    } else {
+        qDebug() << "macOS sleep failed:" << process.readAllStandardError();
+        return "FAILED";
+    }
 #else
-    QProcess::startDetached("systemctl", QStringList() << "suspend");
-    return "SUCCESS";
+    QProcess process;
+    process.start("systemctl", QStringList() << "suspend");
+    process.waitForFinished();
+    if (process.exitCode() == 0) return "SUCCESS";
+    return "FAILED";
 #endif
 }
 
@@ -82,8 +124,22 @@ QString PowerModule::logoff()
 #ifdef Q_OS_WIN
     ExitWindowsEx(EWX_LOGOFF, 0);
     return "SUCCESS";
+#elif defined(Q_OS_MACOS)
+    QProcess process;
+    process.start("osascript", QStringList() << "-e" << "tell application \"System Events\" to log out");
+    process.waitForFinished();
+    if (process.exitCode() == 0) {
+        qDebug() << "macOS logoff command executed successfully.";
+        return "SUCCESS";
+    } else {
+        qDebug() << "macOS logoff failed:" << process.readAllStandardError();
+        return "FAILED";
+    }
 #else
-    QProcess::startDetached("pkill", QStringList() << "-KILL" << "-u" << qgetenv("USER"));
-    return "SUCCESS";
+    QProcess process;
+    process.start("pkill", QStringList() << "-KILL" << "-u" << qgetenv("USER"));
+    process.waitForFinished();
+    if (process.exitCode() == 0) return "SUCCESS";
+    return "FAILED";
 #endif
 }

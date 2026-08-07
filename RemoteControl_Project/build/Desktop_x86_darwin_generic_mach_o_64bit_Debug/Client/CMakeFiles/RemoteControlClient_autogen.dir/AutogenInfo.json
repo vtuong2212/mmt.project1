@@ -1,0 +1,199 @@
+{
+	"BUILD_DIR" : "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Client/RemoteControlClient_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Client",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Client",
+	"CMAKE_EXECUTABLE" : "/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Client/CMakeLists.txt"
+	],
+	"CMAKE_SOURCE_DIR" : "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project",
+	"CROSS_CONFIG" : false,
+	"DEP_FILE" : "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Client/RemoteControlClient_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "RemoteControlClient_autogen/timestamp",
+	"HEADERS" : 
+	[
+		[
+			"/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Client/GUI/MainWindow.h",
+			"MU",
+			"2LCCYRVYXB/moc_MainWindow.cpp",
+			null
+		],
+		[
+			"/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Client/Network/ClientSocket.h",
+			"MU",
+			"XUVW4URUT3/moc_ClientSocket.cpp",
+			null
+		],
+		[
+			"/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Client/Pages/ApplicationPage.h",
+			"MU",
+			"5G3D2AHKMG/moc_ApplicationPage.cpp",
+			null
+		],
+		[
+			"/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Client/Pages/FilePage.h",
+			"MU",
+			"5G3D2AHKMG/moc_FilePage.cpp",
+			null
+		],
+		[
+			"/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Client/Pages/KeyloggerPage.h",
+			"MU",
+			"5G3D2AHKMG/moc_KeyloggerPage.cpp",
+			null
+		],
+		[
+			"/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Client/Pages/PowerPage.h",
+			"MU",
+			"5G3D2AHKMG/moc_PowerPage.cpp",
+			null
+		],
+		[
+			"/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Client/Pages/ProcessPage.h",
+			"MU",
+			"5G3D2AHKMG/moc_ProcessPage.cpp",
+			null
+		],
+		[
+			"/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Client/Pages/ScreenshotPage.h",
+			"MU",
+			"5G3D2AHKMG/moc_ScreenshotPage.cpp",
+			null
+		],
+		[
+			"/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Client/Pages/WebcamPage.h",
+			"MU",
+			"5G3D2AHKMG/moc_WebcamPage.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Client/RemoteControlClient_autogen/include",
+	"MOC_COMPILATION_FILE" : "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Client/RemoteControlClient_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_NETWORK_LIB",
+		"QT_QML_DEBUG",
+		"QT_WIDGETS_LIB"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Common",
+		"/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Common",
+		"/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework/Headers",
+		"/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtCore.framework",
+		"/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/mkspecs/macx-clang",
+		"/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/include",
+		"/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework/Headers",
+		"/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtNetwork.framework",
+		"/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtWidgets.framework/Headers",
+		"/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtWidgets.framework",
+		"/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework/Headers",
+		"/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/lib/QtGui.framework",
+		"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/c++/v1",
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include",
+		"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include",
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT",
+		"Q_GADGET_EXPORT",
+		"Q_ENUM_NS"
+	],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/clang++",
+		"-std=gnu++17",
+		"-dM",
+		"-E",
+		"-c",
+		"/Users/huathaiviettuong/Qt_OpenSource/Tools/CMake/CMake.app/Contents/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Client/RemoteControlClient_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 8,
+	"PARSE_CACHE_FILE" : "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Client/CMakeFiles/RemoteControlClient_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/libexec/moc",
+	"QT_UIC_EXECUTABLE" : "/Users/huathaiviettuong/Qt_OpenSource/6.11.1/macos/libexec/uic",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 11,
+	"SETTINGS_FILE" : "/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/build/Desktop_x86_darwin_generic_mach_o_64bit_Debug/Client/CMakeFiles/RemoteControlClient_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Client/GUI/MainWindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Client/Network/ClientSocket.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Client/Pages/ApplicationPage.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Client/Pages/FilePage.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Client/Pages/KeyloggerPage.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Client/Pages/PowerPage.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Client/Pages/ProcessPage.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Client/Pages/ScreenshotPage.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Client/Pages/WebcamPage.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/huathaiviettuong/Downloads/bun123/mmt.project1/RemoteControl_Project/Client/main.cpp",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

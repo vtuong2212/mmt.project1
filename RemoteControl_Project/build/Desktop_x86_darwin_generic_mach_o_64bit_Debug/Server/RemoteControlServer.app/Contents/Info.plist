@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleIdentifier</key>
+    <string>com.remotecontrol.server</string>
+    <key>CFBundleName</key>
+    <string>RemoteControlServer</string>
+    <key>CFBundleDisplayName</key>
+    <string>Remote Control Server</string>
+    <key>CFBundleVersion</key>
+    <string>1.0</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleExecutable</key>
+    <string>RemoteControlServer</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>12.0</string>
+    <key>NSCameraUsageDescription</key>
+    <string>Remote Control Server needs camera access to capture and stream webcam to the connected client.</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Remote Control Server may need microphone access for multimedia features.</string>
+</dict>
+</plist>
