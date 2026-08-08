@@ -146,7 +146,15 @@ void MainWindow::onConnectClicked()
 
     ui->btnConnect->setEnabled(false);
 
-    if (clientSocket->connectToServer(ip))
+    int port = Constants::SERVER_PORT;
+    if (ip.contains(":"))
+    {
+        QStringList parts = ip.split(":");
+        ip = parts[0];
+        port = parts[1].toInt();
+    }
+
+    if (clientSocket->connectToServer(ip, port))
     {
         // onConnected() sẽ được gọi qua signal
     }
